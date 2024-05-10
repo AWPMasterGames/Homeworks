@@ -1,0 +1,7 @@
+C:\Users\ПК\source\repos\6.05.2024\6.05.2024\bin\Debug\6.05.2024.exe.config
+C:\Users\ПК\source\repos\6.05.2024\6.05.2024\bin\Debug\6.05.2024.exe
+C:\Users\ПК\source\repos\6.05.2024\6.05.2024\bin\Debug\6.05.2024.pdb
+C:\Users\ПК\source\repos\6.05.2024\6.05.2024\obj\Debug\6.05.2024.csproj.AssemblyReference.cache
+C:\Users\ПК\source\repos\6.05.2024\6.05.2024\obj\Debug\6.05.2024.csproj.CoreCompileInputs.cache
+C:\Users\ПК\source\repos\6.05.2024\6.05.2024\obj\Debug\6.05.2024.exe
+C:\Users\ПК\source\repos\6.05.2024\6.05.2024\obj\Debug\6.05.2024.pdb
