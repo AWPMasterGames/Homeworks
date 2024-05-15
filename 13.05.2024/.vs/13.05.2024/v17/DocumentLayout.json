@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\source\\repos\\13.05.2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F536ECDA-3F52-4997-A433-8828D41B886F}|13.05.2024\\13.05.2024.csproj|c:\\users\\\u043F\u043A\\source\\repos\\13.05.2024\\13.05.2024\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F536ECDA-3F52-4997-A433-8828D41B886F}|13.05.2024\\13.05.2024.csproj|solutionrelative:13.05.2024\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F536ECDA-3F52-4997-A433-8828D41B886F}|13.05.2024\\13.05.2024.csproj|c:\\users\\\u043F\u043A\\source\\repos\\13.05.2024\\13.05.2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F536ECDA-3F52-4997-A433-8828D41B886F}|13.05.2024\\13.05.2024.csproj|solutionrelative:13.05.2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\13.05.2024\\13.05.2024\\Student.cs",
+              "RelativeDocumentMoniker": "13.05.2024\\Student.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\13.05.2024\\13.05.2024\\Student.cs",
+              "RelativeToolTip": "13.05.2024\\Student.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAlwIYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T11:18:15.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\13.05.2024\\13.05.2024\\Program.cs",
+              "RelativeDocumentMoniker": "13.05.2024\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\13.05.2024\\13.05.2024\\Program.cs",
+              "RelativeToolTip": "13.05.2024\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T11:12:37.219Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
