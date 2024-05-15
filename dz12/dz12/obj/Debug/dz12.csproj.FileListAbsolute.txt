@@ -1,7 +1,0 @@
-C:\Users\ПК\source\repos\dz12\dz12\bin\Debug\dz12.exe.config
-C:\Users\ПК\source\repos\dz12\dz12\bin\Debug\dz12.exe
-C:\Users\ПК\source\repos\dz12\dz12\bin\Debug\dz12.pdb
-C:\Users\ПК\source\repos\dz12\dz12\obj\Debug\dz12.csproj.AssemblyReference.cache
-C:\Users\ПК\source\repos\dz12\dz12\obj\Debug\dz12.csproj.CoreCompileInputs.cache
-C:\Users\ПК\source\repos\dz12\dz12\obj\Debug\dz12.exe
-C:\Users\ПК\source\repos\dz12\dz12\obj\Debug\dz12.pdb
