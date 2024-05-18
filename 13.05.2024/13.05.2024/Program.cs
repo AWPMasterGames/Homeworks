@@ -11,10 +11,8 @@ namespace _13._05._2024
         static void Main(string[] args)
         {
             Student st = new Student();
-            st.Info();
-            st.AddObject("241",Student.mods.Add);
-            st.Info();
-            
+            st.ChangeMark(1, 0, 0);
+            st.ShowObject(1);
         }
     }
 }
