@@ -1,0 +1,7 @@
+C:\Users\ПК\source\repos\vehicles\vehicles\bin\Debug\vehicles.exe.config
+C:\Users\ПК\source\repos\vehicles\vehicles\bin\Debug\vehicles.exe
+C:\Users\ПК\source\repos\vehicles\vehicles\bin\Debug\vehicles.pdb
+C:\Users\ПК\source\repos\vehicles\vehicles\obj\Debug\vehicles.csproj.AssemblyReference.cache
+C:\Users\ПК\source\repos\vehicles\vehicles\obj\Debug\vehicles.csproj.CoreCompileInputs.cache
+C:\Users\ПК\source\repos\vehicles\vehicles\obj\Debug\vehicles.exe
+C:\Users\ПК\source\repos\vehicles\vehicles\obj\Debug\vehicles.pdb

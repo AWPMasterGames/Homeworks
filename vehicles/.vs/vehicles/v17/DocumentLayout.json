@@ -1,0 +1,179 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\cat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\cat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|c:\\users\\\u043F\u043A\\source\\repos\\vehicles\\vehicles\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\airplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\airplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\tumbleweed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\tumbleweed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|c:\\users\\\u043F\u043A\\source\\repos\\vehicles\\vehicles\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\animal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|c:\\users\\\u043F\u043A\\source\\repos\\vehicles\\vehicles\\imovable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\imovable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|c:\\users\\\u043F\u043A\\source\\repos\\vehicles\\vehicles\\mechanism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}|vehicles\\vehicles.csproj|solutionrelative:vehicles\\mechanism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 175,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Program.cs",
+              "RelativeDocumentMoniker": "vehicles\\Program.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Program.cs",
+              "RelativeToolTip": "vehicles\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:32:40.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMovable.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\IMovable.cs",
+              "RelativeDocumentMoniker": "vehicles\\IMovable.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\IMovable.cs",
+              "RelativeToolTip": "vehicles\\IMovable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T08:52:39.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Animal.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Animal.cs",
+              "RelativeDocumentMoniker": "vehicles\\Animal.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Animal.cs",
+              "RelativeToolTip": "vehicles\\Animal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:33:26.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Mechanism.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Mechanism.cs",
+              "RelativeDocumentMoniker": "vehicles\\Mechanism.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Mechanism.cs",
+              "RelativeToolTip": "vehicles\\Mechanism.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T08:56:43.64Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 225,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bird.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Bird.cs",
+              "RelativeDocumentMoniker": "vehicles\\Bird.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Bird.cs",
+              "RelativeToolTip": "vehicles\\Bird.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:35:47.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cat.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Cat.cs",
+              "RelativeDocumentMoniker": "vehicles\\Cat.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Cat.cs",
+              "RelativeToolTip": "vehicles\\Cat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:34:55.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Airplane.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Airplane.cs",
+              "RelativeDocumentMoniker": "vehicles\\Airplane.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Airplane.cs",
+              "RelativeToolTip": "vehicles\\Airplane.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:35:06.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Car.cs",
+              "RelativeDocumentMoniker": "vehicles\\Car.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Car.cs",
+              "RelativeToolTip": "vehicles\\Car.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:34:42.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tumbleweed.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Tumbleweed.cs",
+              "RelativeDocumentMoniker": "vehicles\\Tumbleweed.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\vehicles\\vehicles\\Tumbleweed.cs",
+              "RelativeToolTip": "vehicles\\Tumbleweed.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:35:32.551Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E8522781-F592-40F6-8AF2-56016C2F0D83}</ProjectGuid>
+    <ProjectGuid>{3CBA2A47-6BFD-462C-B6FC-7CF07AB9B79E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>dz12</RootNamespace>
-    <AssemblyName>dz12</AssemblyName>
+    <RootNamespace>vehicles</RootNamespace>
+    <AssemblyName>vehicles</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Airplane.cs" />
+    <Compile Include="Bird.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="Cat.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="IMovable.cs" />
+    <Compile Include="Mechanism.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tumbleweed.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
