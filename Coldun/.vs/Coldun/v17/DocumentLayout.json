@@ -7,16 +7,8 @@
       "RelativeMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|solutionrelative:coldun\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\coldun\\damagespell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|solutionrelative:coldun\\damagespell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\coldun\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|solutionrelative:coldun\\spell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\coldun\\healspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|solutionrelative:coldun\\healspell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|c:\\users\\\u043F\u043A\\source\\repos\\coldun\\coldun\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CC0B5A3-D349-48A8-A967-0DE2ECDB1D85}|Coldun\\Coldun.csproj|solutionrelative:coldun\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,44 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 225,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HealSpell.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\HealSpell.cs",
-              "RelativeDocumentMoniker": "Coldun\\HealSpell.cs",
-              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\HealSpell.cs",
-              "RelativeToolTip": "Coldun\\HealSpell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T09:49:29.229Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DamageSpell.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\DamageSpell.cs",
-              "RelativeDocumentMoniker": "Coldun\\DamageSpell.cs",
-              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\DamageSpell.cs",
-              "RelativeToolTip": "Coldun\\DamageSpell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAALAAAA",
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\Car.cs",
+              "RelativeDocumentMoniker": "Coldun\\Car.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\Car.cs",
+              "RelativeToolTip": "Coldun\\Car.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T09:40:47.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Spell.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\Spell.cs",
-              "RelativeDocumentMoniker": "Coldun\\Spell.cs",
-              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\Spell.cs",
-              "RelativeToolTip": "Coldun\\Spell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T09:35:05.118Z",
+              "WhenOpened": "2024-06-17T10:38:34.125Z",
               "EditorCaption": ""
             },
             {
@@ -74,7 +41,7 @@
               "RelativeDocumentMoniker": "Coldun\\Program.cs",
               "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Coldun\\Coldun\\Program.cs",
               "RelativeToolTip": "Coldun\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAWwDkAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T09:34:08.758Z",
               "EditorCaption": ""
