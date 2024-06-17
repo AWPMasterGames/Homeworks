@@ -1,0 +1,7 @@
+C:\Users\ПК\source\repos\Coldun\Coldun\bin\Debug\Coldun.exe.config
+C:\Users\ПК\source\repos\Coldun\Coldun\bin\Debug\Coldun.exe
+C:\Users\ПК\source\repos\Coldun\Coldun\bin\Debug\Coldun.pdb
+C:\Users\ПК\source\repos\Coldun\Coldun\obj\Debug\Coldun.csproj.AssemblyReference.cache
+C:\Users\ПК\source\repos\Coldun\Coldun\obj\Debug\Coldun.csproj.CoreCompileInputs.cache
+C:\Users\ПК\source\repos\Coldun\Coldun\obj\Debug\Coldun.exe
+C:\Users\ПК\source\repos\Coldun\Coldun\obj\Debug\Coldun.pdb
