@@ -1,0 +1,7 @@
+C:\Users\ПК\source\repos\explos\explos\bin\Debug\explos.exe.config
+C:\Users\ПК\source\repos\explos\explos\bin\Debug\explos.exe
+C:\Users\ПК\source\repos\explos\explos\bin\Debug\explos.pdb
+C:\Users\ПК\source\repos\explos\explos\obj\Debug\explos.csproj.AssemblyReference.cache
+C:\Users\ПК\source\repos\explos\explos\obj\Debug\explos.csproj.CoreCompileInputs.cache
+C:\Users\ПК\source\repos\explos\explos\obj\Debug\explos.exe
+C:\Users\ПК\source\repos\explos\explos\obj\Debug\explos.pdb
