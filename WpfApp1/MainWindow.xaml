@@ -1,0 +1,74 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="400">
+    <DockPanel 
+        LastChildFill="True" 
+        >
+        <Label Name="HistoryCalc" Content="" FontSize="25" DockPanel.Dock="Top" Height="40" HorizontalAlignment="Right">
+
+        </Label>
+        <Label Name="HistoryResult" Content="" FontSize="15" DockPanel.Dock="Top" Height="30" HorizontalAlignment="Right">
+
+        </Label>
+        <Label Name="label" Content="0" FontSize="50" DockPanel.Dock="Top" Height="80" HorizontalAlignment="Right">
+
+        </Label>
+
+
+        <Grid DockPanel.Dock="Bottom" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Button Name="BtnL" Click="btnl" Grid.Column="0" Grid.Row="0" Content="(" FontSize="50"></Button>
+            <Button Name="BtnR" Click="btnr" Grid.Column="1" Grid.Row="0" Content=")" FontSize="50"></Button>
+            <Button Name="BtnDiv" Click="btndiv" Grid.Column="2" Grid.Row="0" Content="/" FontSize="50"></Button>
+            <Button Name="BtnDL" Click="btndl" Grid.Column="3" Grid.Row="0" Content="⌫" FontSize="45"></Button>
+            <Button Name="BtnPrevCal" Click="btnPrevCal" Grid.Column="4" Grid.Row="0" Content="↑" FontSize="50"></Button>
+
+            <Button Name="Btn7" Click="btn7" Grid.Column="0" Grid.Row="1" Content="7" FontSize="50"></Button>
+            <Button Name="Btn8" Click="btn8" Grid.Column="1" Grid.Row="1" Content="8" FontSize="50"></Button>
+            <Button Name="Btn9" Click="btn9" Grid.Column="2" Grid.Row="1" Content="9" FontSize="50"></Button>
+            <Button Name="BtnMul" Click="btnmul" Grid.Column="3" Grid.Row="1" Content="*" FontSize="50"></Button>
+            <Button Name="BtnNexCal" Click="btnNexCal" Grid.Column="4" Grid.Row="1" Content="↓" FontSize="50"></Button>
+            
+            <Button Name="Btn4" Click="btn4" Grid.Column="0" Grid.Row="2" Content="4" FontSize="50"></Button>
+            <Button Name="Btn5" Click="btn5" Grid.Column="1" Grid.Row="2" Content="5" FontSize="50"></Button>
+            <Button Name="Btn6" Click="btn6" Grid.Column="2" Grid.Row="2" Content="6" FontSize="50"></Button>
+            <Button Name="BtnMin" Click="btnmin" Grid.Column="3" Grid.Row="2" Content="-" FontSize="50"></Button>
+            <Button Name="BtnSelect" Click="select" Grid.Column="4" Grid.Row="2" Content="select" FontSize="25"></Button>
+            
+
+            <Button Name="Btn1" Click="btn1" Grid.Column="0" Grid.Row="3" Content="1" FontSize="50"></Button>
+            <Button Name="Btn2" Click="btn2" Grid.Column="1" Grid.Row="3" Content="2" FontSize="50"></Button>
+            <Button Name="Btn3" Click="btn3" Grid.Column="2" Grid.Row="3" Content="3" FontSize="50"></Button>
+            <Button Name="BtnPlu" Click="btnplu" Grid.Column="3" Grid.Row="3" Content="+" FontSize="50"></Button>
+            <Button Name="BtnC" Click="btnC" Grid.Column="4" Grid.Row="3" Content="C" FontSize="50"></Button>
+
+            <Button Name="BtnDou" Click="btndou" Grid.Column="0" Grid.Row="4" Content="," FontSize="50"></Button>
+            <Button Name="Btn0" Click="btn0" Grid.Column="1" Grid.Row="4" Content="0" FontSize="50"></Button>
+            <Button Name="BtnCal" Click="btncal" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="5" Content="=" FontSize="50"></Button>
+            <Button Name="BtnCE" Click="btnCE" Grid.Column="4" Grid.Row="4" Content="CE" FontSize="50"></Button>
+            
+
+        </Grid>
+    </DockPanel>
+</Window>
