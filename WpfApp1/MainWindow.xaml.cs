@@ -47,8 +47,10 @@ namespace WpfApp1
         void btnCE(object sender, RoutedEventArgs e)
         {
             CalculationHistory.Clear();
+            CalculationHistoryResult.Clear();
             label.Content = "0";
             HistoryCalc.Content = "";
+            HistoryResult.Content = "";
         }
         void btnl(object sender, RoutedEventArgs e)
         {
