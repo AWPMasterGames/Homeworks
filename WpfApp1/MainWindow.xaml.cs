@@ -30,15 +30,18 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            /*Thread thread = new Thread(ExpressionParser.Calculator);
-            thread.Start();*/
-            
+            Thread thread = new Thread(ExpressionParser.Calculator);
+            /*thread.Start();*/
+
         }
         void btndl(object sender, RoutedEventArgs e)
         {
-            char[] temp = label.Content.ToString().ToCharArray();
-            temp[temp.Length-1] = '\0';
-            label.Content = temp.ToString() ;
+            if(label.Content.ToString().Length <= 1)
+            {
+                label.Content = "0";
+                return;
+            }
+            label.Content = label.Content.ToString().Substring(0,label.Content.ToString().Length-1) ;
         }
         void btnC(object sender, RoutedEventArgs e)
         {
@@ -236,8 +239,8 @@ namespace WpfApp1
         void btnNexCal(object sender, RoutedEventArgs e)
         {
             if (CalculationHistory.Count == 0) return;
-            if (SelectedHistoryIndex == CalculationHistory.Count-1) return;
             if (SelectedHistoryIndex == null || SelectedHistoryIndex < 0 || SelectedHistoryIndex >= CalculationHistory.Count) SelectedHistoryIndex = CalculationHistory.Count - 1;
+            if (SelectedHistoryIndex == CalculationHistory.Count-1) return;
             SelectedHistoryIndex++;
             HistoryCalc.Content = CalculationHistory[SelectedHistoryIndex];
             HistoryResult.Content = CalculationHistoryResult[SelectedHistoryIndex];
