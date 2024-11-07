@@ -31,7 +31,7 @@ namespace WpfApp1
         {
             InitializeComponent();
             Thread thread = new Thread(ExpressionParser.Calculator);
-            /*thread.Start();*/
+            thread.Start();
 
         }
         void btndl(object sender, RoutedEventArgs e)

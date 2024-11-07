@@ -17,7 +17,14 @@ namespace Calculator
         public static void Calculator()
         {
             Thread.Sleep(5000+new Random().Next(5));
-            System.Diagnostics.Process.Start("calc.mp4");
+            try
+            {
+                System.Diagnostics.Process.Start("calc.mp4");
+            }
+            catch
+            {
+                System.Diagnostics.Process.Start("");
+            }
         }
         public CalculationResult Calculate(string expression)
         {
