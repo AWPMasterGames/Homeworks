@@ -1,4 +1,4 @@
-﻿<Window x:Class="KeyboardTrainer.MainWindow"
+<Window x:Class="KeyboardTrainer.MainWindow"
         x:ClassModifier="internal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -23,7 +23,7 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Orientation="Horizontal">
                 <TextBlock FontSize="15" Text="Speed: "/>
-                <TextBlock FontSize="15" FontWeight="Bold" Text="0"/>
+                <TextBlock Name="SpeedChar" FontSize="15" FontWeight="Bold" Text="0"/>
                 <TextBlock FontSize="15" Text=" chars/min"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Horizontal">
@@ -464,22 +464,22 @@
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="QBtn" Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="q" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="WBtn" Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="w" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="EBtn" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="e" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="RBtn" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="r" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
