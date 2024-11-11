@@ -1,8 +1,12 @@
-﻿using System.Linq;
+using System.Linq;
 using System;
 using System.Windows;
 using System.Windows.Input;
 using System.Threading;
+using System.Windows.Media;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace KeyboardTrainer
 {
@@ -15,6 +19,12 @@ namespace KeyboardTrainer
         char[] BlackList = { '+', '-', '*', '/', '(', ')' };
         Char[] Keys = "QWERTYUIOPASDFGHJKLZXCVBNM".ToArray();
 
+        DateTime _lastClickTime;
+        DateTime _currentClickTime;
+        int _deltasPoolRange = 30;
+        int _minimumDeltas = 5;
+        List<double> _clicksDeltas = new List<double>();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -26,33 +36,33 @@ namespace KeyboardTrainer
             Key key = (Key)e.Key;
             string keyname = key.ToString();
             //if(Keyboard.IsKeyDown(key)) { }
-            if (Keyboard.IsKeyDown(Key.Q)) { RandomKey('Q'); }
-            if (Keyboard.IsKeyDown(Key.W)) { RandomKey('W'); }
-            if (Keyboard.IsKeyDown(Key.E)) { RandomKey('E'); }
-            if (Keyboard.IsKeyDown(Key.R)) { RandomKey('R'); }
-            if (Keyboard.IsKeyDown(Key.T)) { RandomKey('T'); }
-            if (Keyboard.IsKeyDown(Key.Y)) { RandomKey('Y'); }
-            if (Keyboard.IsKeyDown(Key.U)) { RandomKey('U'); }
-            if (Keyboard.IsKeyDown(Key.I)) { RandomKey('I'); }
-            if (Keyboard.IsKeyDown(Key.O)) { RandomKey('O'); }
-            if (Keyboard.IsKeyDown(Key.P)) { RandomKey('P'); }
-            if (Keyboard.IsKeyDown(Key.A)) { RandomKey('A'); }
-            if (Keyboard.IsKeyDown(Key.S)) { RandomKey('S'); }
-            if (Keyboard.IsKeyDown(Key.D)) { RandomKey('D'); }
-            if (Keyboard.IsKeyDown(Key.F)) { RandomKey('F'); }
-            if (Keyboard.IsKeyDown(Key.G)) { RandomKey('G'); }
-            if (Keyboard.IsKeyDown(Key.H)) { RandomKey('H'); }
-            if (Keyboard.IsKeyDown(Key.J)) { RandomKey('J'); }
-            if (Keyboard.IsKeyDown(Key.K)) { RandomKey('K'); }
-            if (Keyboard.IsKeyDown(Key.L)) { RandomKey('L'); }
-            if (Keyboard.IsKeyDown(Key.Z)) { RandomKey('Z'); }
-            if (Keyboard.IsKeyDown(Key.X)) { RandomKey('X'); }
-            if (Keyboard.IsKeyDown(Key.C)) { RandomKey('C'); }
-            if (Keyboard.IsKeyDown(Key.V)) { RandomKey('V'); }
-            if (Keyboard.IsKeyDown(Key.B)) { RandomKey('B'); }
-            if (Keyboard.IsKeyDown(Key.N)) { RandomKey('N'); }
-            if (Keyboard.IsKeyDown(Key.M)) { RandomKey('M'); }
-            if (Keyboard.IsKeyDown(Key.Space)) { RandomKey(' '); }
+            if (Keyboard.IsKeyDown(Key.Q)) { RandomKey('Q'); ChangeCollor('Q'); }
+            if (Keyboard.IsKeyDown(Key.W)) { RandomKey('W'); ChangeCollor('Q'); }
+            if (Keyboard.IsKeyDown(Key.E)) { RandomKey('E'); ChangeCollor('E'); }
+            if (Keyboard.IsKeyDown(Key.R)) { RandomKey('R'); ChangeCollor('R'); }
+            if (Keyboard.IsKeyDown(Key.T)) { RandomKey('T'); ChangeCollor('T'); }
+            if (Keyboard.IsKeyDown(Key.Y)) { RandomKey('Y'); ChangeCollor('Y'); }
+            if (Keyboard.IsKeyDown(Key.U)) { RandomKey('U'); ChangeCollor('U'); }
+            if (Keyboard.IsKeyDown(Key.I)) { RandomKey('I'); ChangeCollor('I'); }
+            if (Keyboard.IsKeyDown(Key.O)) { RandomKey('O'); ChangeCollor('O'); }
+            if (Keyboard.IsKeyDown(Key.P)) { RandomKey('P'); ChangeCollor('P'); }
+            if (Keyboard.IsKeyDown(Key.A)) { RandomKey('A'); ChangeCollor('A'); }
+            if (Keyboard.IsKeyDown(Key.S)) { RandomKey('S'); ChangeCollor('S'); }
+            if (Keyboard.IsKeyDown(Key.D)) { RandomKey('D'); ChangeCollor('D'); }
+            if (Keyboard.IsKeyDown(Key.F)) { RandomKey('F'); ChangeCollor('F'); }
+            if (Keyboard.IsKeyDown(Key.G)) { RandomKey('G'); ChangeCollor('G'); }
+            if (Keyboard.IsKeyDown(Key.H)) { RandomKey('H'); ChangeCollor('H'); }
+            if (Keyboard.IsKeyDown(Key.J)) { RandomKey('J'); ChangeCollor('J'); }
+            if (Keyboard.IsKeyDown(Key.K)) { RandomKey('K'); ChangeCollor('K'); }
+            if (Keyboard.IsKeyDown(Key.L)) { RandomKey('L'); ChangeCollor('L'); }
+            if (Keyboard.IsKeyDown(Key.Z)) { RandomKey('Z'); ChangeCollor('Z'); }
+            if (Keyboard.IsKeyDown(Key.X)) { RandomKey('X'); ChangeCollor('X'); }
+            if (Keyboard.IsKeyDown(Key.C)) { RandomKey('C'); ChangeCollor('C'); }
+            if (Keyboard.IsKeyDown(Key.V)) { RandomKey('V'); ChangeCollor('V'); }
+            if (Keyboard.IsKeyDown(Key.B)) { RandomKey('B'); ChangeCollor('B'); }
+            if (Keyboard.IsKeyDown(Key.N)) { RandomKey('N'); ChangeCollor('N'); }
+            if (Keyboard.IsKeyDown(Key.M)) { RandomKey('M'); ChangeCollor('M'); }
+            if (Keyboard.IsKeyDown(Key.Space)) { RandomKey(' '); ChangeCollor(' '); }
         }
         private void TurnOn(object sender, RoutedEventArgs e)
         {
@@ -102,6 +112,7 @@ namespace KeyboardTrainer
                 Failcount++;
                 FailsCount.Text = Failcount.ToString();
             }
+            ClickPermMinut();
             MainField.Text = MainField.Text + key;
             SymbolsCount--;
             if (SecondField.Text.Length > 35 & SymbolsCount == 0)
@@ -170,6 +181,61 @@ namespace KeyboardTrainer
         {
             DifficultyText.Text = ((int)DifficultySlider.Value).ToString();
 
+        }
+        private async void ChangeCollor(char key)
+        {
+            int time = 50;
+            Brush brushes = null;
+            switch (key)
+            {
+                case 'Q':
+                    brushes = QBtn.Background;
+                    QBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    QBtn.Background = brushes;
+                    break;
+                case 'W':
+                    brushes = WBtn.Background;
+                    WBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    WBtn.Background = brushes;
+                    break;
+                case 'E':
+                    brushes = EBtn.Background;
+                    EBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    EBtn.Background = brushes;
+                    break;
+                case 'R':
+
+                    break;
+
+            }
+        }
+        
+
+        private void ClickPermMinut()
+        {
+            if (_lastClickTime.Millisecond == 0) _lastClickTime = DateTime.Now;
+            _currentClickTime = DateTime.Now;
+
+            _clicksDeltas.Add((_currentClickTime - _lastClickTime).TotalMilliseconds);
+
+            double sum = 0;
+            for (int i = 0; i < _clicksDeltas.Count; i++) sum += _clicksDeltas[i];
+
+            if (_clicksDeltas.Count > _minimumDeltas)
+                SpeedChar.Text = $"{(int)(60 / ((sum / _clicksDeltas.Count) / 1000))} Символов в минуту";
+            else
+                SpeedChar.Text = $"Слишком мало нажатий для расчета среднего времени";
+            _lastClickTime = _currentClickTime;
+
+            CutClickList();
+        }
+        private void CutClickList()
+        {
+            if (_clicksDeltas.Count > _deltasPoolRange)
+                _clicksDeltas.RemoveRange(0, _deltasPoolRange / 2);
         }
     }
 }
