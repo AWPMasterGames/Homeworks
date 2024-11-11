@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,7 +42,7 @@ namespace Reg
             UsernameInfo.Text = "Username";
             if (IsUserExist())
             {
-                UsernameInfo.Text = "Username: Пользователь уже существует";
+                UsernameInfo.Text = "Username: Пользователь c таким именем или почтой уже существует";
             }
             if (Password.Password.Length < 6)
             {
@@ -98,9 +98,9 @@ namespace Reg
             return false;
         }
 
-        private void Password_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        private void PasswordChanged(object sender, RoutedEventArgs e)
         {
-            if (Password.Password.Length < 6)
+            /*if (Password.Password.Length < 6)
             {
                 PasswordInfo.Text = "Password: Пароль должен быть длинее 5 символов";
             }
@@ -110,7 +110,7 @@ namespace Reg
                 PasswordInfo.Text = "Password: Пароль должен содержвать в себе символы $#!@._-...";
 
             if (!FindDigits())
-                PasswordInfo.Text = "Password: Пароль должен содержвать в себе цифры";
+                PasswordInfo.Text = "Password: Пароль должен содержвать в себе цифры";*/
 
         }
         private bool IsUserExist()
@@ -123,6 +123,7 @@ namespace Reg
                 }
                 if (Users[i].Email == Email.Text)
                 {
+
                     return true;
                 }
             }
