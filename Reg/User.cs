@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +14,7 @@ class User
 
     public string Name { get { return _Name; } }
     public string Email { get { return _Email; } }
+    public string Password { get { return _Password; } }
 
     public User() { }
     public User(string name, string email, string password, string birthday)
