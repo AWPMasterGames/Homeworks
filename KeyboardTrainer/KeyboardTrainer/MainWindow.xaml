@@ -484,99 +484,99 @@
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="TBtn" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="t" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="YBtn" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="y" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="UBtn" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="u" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="IBtn" Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="i" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="OBtn" Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="o" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnP" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="PBtn" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="p" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnSF" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="SLBtn" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="[" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnSS" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="SRBtn" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="]" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="75">
-                        <Border Name="BtnSlesh" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="SleshBtn" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="\" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Grid Height="50" Width="100">
-                        <Border Name="BtnCapsLock" Background="#FFB5B5B5" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="CapsLockBtn" Background="#FFB5B5B5" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="15" HorizontalAlignment="Center" Text="Caps Lock" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnA" Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="ABtn" Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="a" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnS" Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="SBtn" Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="s" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnD" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="DBtn" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="d" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnF" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="FBtn" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="f" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnG" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="GBtn" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="g" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnH" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="HBtn" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="h" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnJ" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="JBtn" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="j" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnK" Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="KBtn" Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="k" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Name="BtnL"  Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="LBtn"  Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="l" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
@@ -603,42 +603,42 @@
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="ZBtn" Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="z" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="XBtn" Background="#FFE6F077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="x" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="CBtn" Background="#FF7FF077" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="c" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="VBtn" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="v" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="BBtn" Background="#FF77BEF0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="b" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="NBtn" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="n" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="MBtn" Background="#FFDB77F0" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="m" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="50">
-                        <Border Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border  Background="#FFF07795" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="30" HorizontalAlignment="Center" Text="," VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
@@ -675,7 +675,7 @@
                         </Border>
                     </Grid>
                     <Grid Height="50" Width="294">
-                        <Border Background="#FFE5BB72" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
+                        <Border Name="SpaceBtn" Background="#FFE5BB72" BorderBrush="Black" BorderThickness="2" CornerRadius="10" Margin="2">
                             <TextBlock FontSize="15" HorizontalAlignment="Center" Text="Space" VerticalAlignment="Center"/>
                         </Border>
                     </Grid>
