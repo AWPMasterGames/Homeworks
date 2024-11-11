@@ -17,7 +17,9 @@ namespace KeyboardTrainer
         int Failcount;
         int TextDifficulty;
         char[] BlackList = { '+', '-', '*', '/', '(', ')' };
-        Char[] Keys = "QWERTYUIOPASDFGHJKLZXCVBNM".ToArray();
+        char[] Keys = "QWERTYUIOPASDFGHJKLZXCVBNM".ToArray();
+
+        List<Brush> Colors = new List<Brush>();
 
         DateTime _lastClickTime;
         DateTime _currentClickTime;
@@ -28,6 +30,12 @@ namespace KeyboardTrainer
         public MainWindow()
         {
             InitializeComponent();
+            Colors.Add(QBtn.Background);
+            Colors.Add(WBtn.Background);
+            Colors.Add(EBtn.Background);
+            Colors.Add(RBtn.Background);
+            Colors.Add(YBtn.Background);
+            Colors.Add(SpaceBtn.Background);
         }
 
         private void KeyboardClick(object sender, KeyEventArgs e)
@@ -213,7 +221,7 @@ namespace KeyboardTrainer
             }
         }
         
-
+        
         private void ClickPermMinut()
         {
             if (_lastClickTime.Millisecond == 0) _lastClickTime = DateTime.Now;
@@ -236,6 +244,10 @@ namespace KeyboardTrainer
         {
             if (_clicksDeltas.Count > _deltasPoolRange)
                 _clicksDeltas.RemoveRange(0, _deltasPoolRange / 2);
+        }
+        private void GetCollors()
+        {
+            
         }
     }
 }
