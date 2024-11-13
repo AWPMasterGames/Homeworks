@@ -1,169 +1,135 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-namespace Reg
-{
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
-    ///
-    public partial class MainWindow : Window
-    {
-        char[] symbols = "!\"#$%&'()*+,-./:;<=>?@[ \\ ]^_`{|}".ToCharArray();
-        List<User> Users = new List<User>();
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-        private void RegisterBtn(object sender, RoutedEventArgs e)
-        {
-            if (CheckData()) Users.Add(new User(Username.Text, Email.Text, CPassword.Password, Birthday.Text));
-
-        }
-        private void LoginBtn(object sender, RoutedEventArgs e)
-        {
-            bool FindUser = false;
-            bool CorrectPassword = false;
-            for (int i = 0; i < Users.Count; i++)
-            {
-                if (Login.Text == Users[i].Name)
-                {
-                    FindUser = true;
-                    if (LPassword.Password == Users[i].Password)
-                    {
-                        CorrectPassword = true;
-                        LoginInfo.Text = "Вы Успешно вошли";
-                        return;
-                    }
-                }
-            }
-            if (!FindUser) LoginInfo.Text = "Пользователь не найден";
-            else if (!CorrectPassword) LoginInfo.Text = "Неверный пароль";
-        }
-        private bool CheckData()
-        {
-            if (Username.Text.Length < 3)
-            {
-                UsernameInfo.Text = "Username: Имя пользователя должно быть не менее 3 символа";
-                return false;
-            }
-            UsernameInfo.Text = "Username";
-            if (IsUserExist())
-            {
-                UsernameInfo.Text = "Username: Пользователь c таким именем или почтой уже существует";
-            }
-            if (Password.Password.Length < 6)
-            {
-                PasswordInfo.Text = "Password: Пароль должен быть длинее 5 символов";
-                return false;
-            }
-
-            if (!FindSymbols())
-            {
-                PasswordInfo.Text = "Password: Пароль должен содержвать в себе символы $#!@._-...";
-                return false;
-            }
-
-            if (!FindDigits())
-            {
-                PasswordInfo.Text = "Password: Пароль должен содержвать в себе цифры";
-
-                return false;
-            }
-            PasswordInfo.Text = "Password";
-
-            if (CPassword.Password != Password.Password)
-            {
-                CPasswordInfo.Text = "Confirm password: Пароли должны быть одинаковыми";
-                return false;
-            }
-            CPasswordInfo.Text = "Confirm password";
-
-            if (Birthday.Text.Length < 10)
-            {
-                DateInfoInfo.Text = "Birth date: выберите дату в календоре";
-                return false;
-            }
-            DateInfoInfo.Text = "Birth date";
-            return true;
-        }
-        private bool FindSymbols()
-        {
-            for (int i = 0; i < symbols.Length; i++)
-            {
-                if (Password.Password.IndexOf(symbols[i]) > -1) return true;
-            }
-            return false;
-        }
-        private bool FindDigits()
-        {
-            int count = 0;
-            for (int i = 0; i < Password.Password.Length; i++)
-            {
-                if (char.IsDigit(Password.Password[i])) { count++; }
-            }
-            if (count > 0) return true;
-            return false;
-        }
-
-        private void PasswordChanged(object sender, RoutedEventArgs e)
-        {
-            /*if (Password.Password.Length < 6)
-            {
-                PasswordInfo.Text = "Password: Пароль должен быть длинее 5 символов";
-            }
+<Window x:Class="Reg.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Reg"
+        mc:Ignorable="d"
+        Title="Registarion" Height="500" Width="450"
+        MinHeight="200" MinWidth="200"
+        MaxHeight="800" MaxWidth="800"
+        SizeChanged="Window_SizeChanged"
+        Name="RegWindow"
+        >
 
 
-            if (!FindSymbols())
-                PasswordInfo.Text = "Password: Пароль должен содержвать в себе символы $#!@._-...";
+    <Grid>
 
-            if (!FindDigits())
-                PasswordInfo.Text = "Password: Пароль должен содержвать в себе цифры";*/
+        <ScrollViewer Name="RegistrationPanel" VerticalScrollBarVisibility="Visible"
+                      Visibility="Hidden">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="62*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="37*"/>
+                    <RowDefinition Height="37*"/>
+                </Grid.RowDefinitions>
+                <TextBox Name="Username" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,0" Text="Username" Foreground="#FFB5B5B5" FontSize="36"/>
+                <TextBox Name="Email" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Margin="0,0,0,0" Text="E-mail" Foreground="#FFB5B5B5" FontSize="36"/>
+                <PasswordBox Name="Password" Grid.Column="1" PasswordChanged="PasswordChanged" Grid.Row="6" Password="12345" Margin="0,0,0,0" Foreground="#FFB5B5B5" FontSize="36"/>
+                <PasswordBox Name="CPassword" Grid.Column="1" Grid.Row="8" Password="12345" Margin="0,0,0,0" Foreground="#FFB5B5B5" FontSize="36"/>
+                <DatePicker Name="Birthday" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="10" Width="310" Foreground="#FFB5B5B5" FontSize="36"/>
 
-        }
-        private bool IsUserExist()
-        {
-            for (int i = 0; i < Users.Count; i++)
-            {
-                if (Users[i].Name == Username.Text)
-                {
-                    return true;
-                }
-                if (Users[i].Email == Email.Text)
-                {
 
-                    return true;
-                }
-            }
-            return false;
-        }
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="0" TextWrapping="Wrap" Text="Register new user" VerticalAlignment="Center" Height="60" FontSize="36" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Width="310"/>
+                <TextBlock Name="UsernameInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="PasswordInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="CPasswordInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Confirm password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="DateInfoInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="9" TextWrapping="Wrap" Text="Birth date" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <Button Click="RegisterBtn" Grid.Column="1" Content="Register" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="11" VerticalAlignment="Center" Width="268" Height="21"/>
+                <Button Click="LoginPanelButton" Grid.Column="1" Content="Login" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="12" VerticalAlignment="Center" Width="268" Height="21"/>
 
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            RegistrationPanel.Height = RegWindow.Height - 50;
-        }
-        private void RegPanelButton(object sender, RoutedEventArgs e)
-        {
-            LoginPanel.Visibility = Visibility.Hidden;
-            RegistrationPanel.Visibility = Visibility.Visible;
-        }
-        private void LoginPanelButton(object sender, RoutedEventArgs e)
-        {
-            RegistrationPanel.Visibility = Visibility.Hidden;
-            LoginPanel.Visibility = Visibility.Visible;
-        }
-    }
-}
+            </Grid>
+        </ScrollViewer>
+        <ScrollViewer Name="LoginPanel" Height="400" VerticalScrollBarVisibility="Visible"
+                      Visibility="Hidden">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="62*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="37*"/>
+                </Grid.RowDefinitions>
+                <TextBox Name="Login" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,0" Text="Username" Foreground="#FFB5B5B5" FontSize="36"/>
+                <PasswordBox Name="LPassword" Grid.Column="1" PasswordChanged="PasswordChanged" Grid.Row="4" Password="12345" Margin="0,0,0,0" Foreground="#FFB5B5B5" FontSize="36"/>
+                <Button Click="LoginBtn" Grid.Column="1" Content="Login" Margin="0,00,00,00" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Width="268" Height="36"/>
+
+
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Center" Height="60" FontSize="36" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Width="310"/>
+                <TextBlock Name="UsernameInfo1" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="PasswordInfo1" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="LoginInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <Button Click="RegPanelButton" Grid.Column="1" Content="Registration" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" Width="268" Height="36"/>
+
+            </Grid>
+        </ScrollViewer>
+        <ScrollViewer Name="Userpanel" Height="500" VerticalScrollBarVisibility="Visible"
+               Visibility="Visible">
+            <Grid Height="441">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="62*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="37*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Name="UserUsername" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="UserEmail" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="UserPassword" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="UserBirthday" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="0" TextWrapping="Wrap" Text="User Info" VerticalAlignment="Center" Height="60" FontSize="36" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Width="310"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Birthday" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <Button Click="ExitBtn" Grid.Column="1" Content="Exit" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center" Width="268" Height="36"/>
+
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+
+
+
+</Window>
