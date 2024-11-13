@@ -15,6 +15,7 @@ class User
     public string Name { get { return _Name; } }
     public string Email { get { return _Email; } }
     public string Password { get { return _Password; } }
+    public string Birthday { get { return _BirthDay; } }
 
     public User() { }
     public User(string name, string email, string password, string birthday)
