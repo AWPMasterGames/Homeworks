@@ -28,9 +28,34 @@ namespace Reg
         {
             InitializeComponent();
         }
-        private void ConfirmBtn(object sender, RoutedEventArgs e)
+        private void RegisterBtn(object sender, RoutedEventArgs e)
         {
             if (CheckData()) Users.Add(new User(Username.Text, Email.Text, CPassword.Password, Birthday.Text));
+
+        }
+        private void LoginBtn(object sender, RoutedEventArgs e)
+        {
+            bool FindUser = false;
+            bool CorrectPassword = false;
+            for (int i = 0; i < Users.Count; i++)
+            {
+                if (Login.Text == Users[i].Name)
+                {
+                    FindUser = true;
+                    if (LPassword.Password == Users[i].Password)
+                    {
+                        CorrectPassword = true;
+                        LoginInfo.Text = "Вы Успешно вошли";
+                        RegistrationPanel.Visibility = Visibility.Hidden;
+                        LoginPanel.Visibility = Visibility.Hidden;
+                        Userpanel.Visibility = Visibility.Visible;
+                        LoadUserInfo(Users[i]);
+                        return;
+                    }
+                }
+            }
+            if (!FindUser) LoginInfo.Text = "Пользователь не найден";
+            else if (!CorrectPassword) LoginInfo.Text = "Неверный пароль";
         }
         private bool CheckData()
         {
@@ -128,6 +153,38 @@ namespace Reg
                 }
             }
             return false;
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            RegistrationPanel.Height = RegWindow.Height - 50;
+        }
+        private void RegPanelButton(object sender, RoutedEventArgs e)
+        {
+            LoginPanel.Visibility = Visibility.Hidden;
+            RegistrationPanel.Visibility = Visibility.Visible;
+        }
+        private void LoginPanelButton(object sender, RoutedEventArgs e)
+        {
+            RegistrationPanel.Visibility = Visibility.Hidden;
+            LoginPanel.Visibility = Visibility.Visible;
+        }
+        private void LoadUserInfo(User user)
+        {
+            UserUsername.Text = user.Name;
+            UserEmail.Text = user.Email;
+            UserPassword.Text = user.Password;
+            UserBirthday.Text = user.Birthday;
+        }
+        private void ExitBtn(object sender, RoutedEventArgs e)
+        {
+            Userpanel.Visibility = Visibility.Hidden;
+            RegistrationPanel.Visibility = Visibility.Hidden;
+            LoginPanel.Visibility = Visibility.Visible;
+            UserUsername.Text = "";
+            UserEmail.Text = "";
+            UserPassword.Text = "";
+            UserBirthday.Text = "";
         }
     }
 }
