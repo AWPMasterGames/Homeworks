@@ -1,21 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\",
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|c:\\users\\\u043F\u043A\\source\\repos\\keyboardtrainer\\keyboardtrainer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|c:\\users\\\u043F\u043A\\documents\\github\\homeworks\\keyboardtrainer\\keyboardtrainer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|solutionrelative:keyboardtrainer\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\keyboardtrainer\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\keyboardtrainer\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|solutionrelative:keyboardtrainer\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|c:\\users\\\u043F\u043A\\source\\repos\\keyboardtrainer\\keyboardtrainer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|c:\\users\\\u043F\u043A\\documents\\github\\homeworks\\keyboardtrainer\\keyboardtrainer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B2EB1181-2966-498A-997F-059B3E0BA9AE}|KeyboardTrainer\\KeyboardTrainer.csproj|solutionrelative:keyboardtrainer\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041F\u041A\\Desktop\\C#\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
               "RelativeDocumentMoniker": "KeyboardTrainer\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
               "RelativeToolTip": "KeyboardTrainer\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-04T10:57:54.391Z",
@@ -43,30 +40,17 @@
         },
         {
           "DockedWidth": 264,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\C#\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\MainWindow.xaml.cs",
-              "RelativeToolTip": "..\\..\\..\\Desktop\\C#\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAF4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T08:56:55.651Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
               "RelativeDocumentMoniker": "KeyboardTrainer\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml",
               "RelativeToolTip": "KeyboardTrainer\\MainWindow.xaml",
-              "ViewState": "AgIAANMBAAAAAAAAAAAuwPQBAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAMMBAAAAAAAAAAAuwNYBAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-04T10:57:54.528Z",
               "EditorCaption": ""
@@ -75,11 +59,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "KeyboardTrainer\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Documents\\GitHub\\Homeworks\\KeyboardTrainer\\KeyboardTrainer\\MainWindow.xaml.cs",
               "RelativeToolTip": "KeyboardTrainer\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAArwH4AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACoBAAAAAAAAAAAuwDkBAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T10:57:54.605Z",
               "EditorCaption": ""

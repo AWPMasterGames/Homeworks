@@ -45,7 +45,7 @@ namespace KeyboardTrainer
             string keyname = key.ToString();
             //if(Keyboard.IsKeyDown(key)) { }
             if (Keyboard.IsKeyDown(Key.Q)) { RandomKey('Q'); ChangeCollor('Q'); }
-            if (Keyboard.IsKeyDown(Key.W)) { RandomKey('W'); ChangeCollor('Q'); }
+            if (Keyboard.IsKeyDown(Key.W)) { RandomKey('W'); ChangeCollor('W'); }
             if (Keyboard.IsKeyDown(Key.E)) { RandomKey('E'); ChangeCollor('E'); }
             if (Keyboard.IsKeyDown(Key.R)) { RandomKey('R'); ChangeCollor('R'); }
             if (Keyboard.IsKeyDown(Key.T)) { RandomKey('T'); ChangeCollor('T'); }
@@ -192,30 +192,147 @@ namespace KeyboardTrainer
         }
         private async void ChangeCollor(char key)
         {
-            int time = 50;
-            Brush brushes = null;
+            int time = 60;
             switch (key)
             {
                 case 'Q':
-                    brushes = QBtn.Background;
                     QBtn.Background = Brushes.DarkGray;
                     await Task.Delay(time);
-                    QBtn.Background = brushes;
+                    QBtn.Background = Colors[0];
                     break;
                 case 'W':
-                    brushes = WBtn.Background;
+                    
                     WBtn.Background = Brushes.DarkGray;
                     await Task.Delay(time);
-                    WBtn.Background = brushes;
+                    WBtn.Background = Colors[1];
                     break;
                 case 'E':
-                    brushes = EBtn.Background;
+                    
                     EBtn.Background = Brushes.DarkGray;
                     await Task.Delay(time);
-                    EBtn.Background = brushes;
+                    EBtn.Background = Colors[2];
                     break;
                 case 'R':
+                    RBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    RBtn.Background = Colors[3];
+                    break;
 
+                case 'T':
+                    TBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    TBtn.Background = Colors[3];
+                    break;
+
+                case 'Y':
+                    YBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    YBtn.Background = Colors[4];
+                    break;
+                case 'U':
+                    UBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    UBtn.Background = Colors[4];
+                    break;
+                case 'I':
+                    IBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    IBtn.Background = Colors[0];
+                    break;
+                case 'O':
+                    OBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    OBtn.Background = Colors[1];
+                    break;
+                case 'P':
+                    PBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    PBtn.Background = Colors[2];
+                    break;
+                case 'A':
+                    ABtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    ABtn.Background = Colors[0];
+                    break;
+                case 'S':
+                    SBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    SBtn.Background = Colors[1];
+                    break;
+                case 'D':
+                    DBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    DBtn.Background = Colors[2];
+                    break;
+                case 'F':
+                    FBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    FBtn.Background = Colors[3];
+                    break;
+                case 'G':
+                    GBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    GBtn.Background = Colors[3];
+                    break;
+                case 'H':
+                    HBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    HBtn.Background = Colors[4];
+                    break;
+                case 'J':
+                    JBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    JBtn.Background = Colors[4];
+                    break;
+                case 'K':
+                    KBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    KBtn.Background = Colors[0];
+                    break;
+                case 'L':
+                    LBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    LBtn.Background = Colors[1];
+                    break;
+                case 'Z':
+                    ZBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    ZBtn.Background = Colors[0];
+                    break;
+                case 'X':
+                    XBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    XBtn.Background = Colors[1];
+                    break;
+                case 'C':
+                    CBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    CBtn.Background = Colors[2];
+                    break;
+                case 'V':
+                    VBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    VBtn.Background = Colors[3];
+                    break;
+                case 'B':
+                    BBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    BBtn.Background = Colors[3];
+                    break;
+                case 'N':
+                    NBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    NBtn.Background = Colors[4];
+                    break;
+                case 'M':
+                    MBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    MBtn.Background = Colors[4];
+                    break;
+                case ' ':
+                    SpaceBtn.Background = Brushes.DarkGray;
+                    await Task.Delay(time);
+                    SpaceBtn.Background = Colors[5];
                     break;
 
             }
