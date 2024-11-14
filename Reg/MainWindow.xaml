@@ -16,7 +16,7 @@
     <Grid>
 
         <ScrollViewer Name="RegistrationPanel" VerticalScrollBarVisibility="Visible"
-                      Visibility="Visible">
+                      Visibility="Hidden">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="9*"/>
@@ -92,7 +92,7 @@
             </Grid>
         </ScrollViewer>
         <ScrollViewer Name="Userpanel" Height="500" VerticalScrollBarVisibility="Visible"
-               Visibility="Hidden">
+               Visibility="Visible">
             <Grid Height="441">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="9*"/>
@@ -124,7 +124,7 @@
                 <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
                 <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
                 <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Birthday" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <Button Click="ExitBtn" Grid.Column="1" Content="Exit" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center" Width="268" Height="36"/>
+                <Button Click="ExitBtn" Grid.Column="1" Content="Exit" Margin="0,8,0,0" HorizontalAlignment="Center" Grid.Row="10" VerticalAlignment="Top" Width="268" Height="36"/>
 
             </Grid>
         </ScrollViewer>

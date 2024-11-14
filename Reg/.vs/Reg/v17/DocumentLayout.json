@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\reg\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\reg\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|solutionrelative:mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\reg\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{210B03E1-108B-4754-9C63-887F2995C819}|Reg.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -44,43 +44,43 @@
         },
         {
           "DockedWidth": 254,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-07T10:39:31.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAAwLEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T10:39:22.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\User.cs",
               "RelativeDocumentMoniker": "User.cs",
               "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\Reg\\User.cs",
               "RelativeToolTip": "User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T10:47:02.993Z",
               "EditorCaption": ""
