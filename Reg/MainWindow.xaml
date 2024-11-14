@@ -16,7 +16,7 @@
     <Grid>
 
         <ScrollViewer Name="RegistrationPanel" VerticalScrollBarVisibility="Visible"
-                      Visibility="Hidden">
+                      Visibility="Visible">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="9*"/>
@@ -92,7 +92,7 @@
             </Grid>
         </ScrollViewer>
         <ScrollViewer Name="Userpanel" Height="500" VerticalScrollBarVisibility="Visible"
-               Visibility="Visible">
+               Visibility="Hidden">
             <Grid Height="441">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="9*"/>
