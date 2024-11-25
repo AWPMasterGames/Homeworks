@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|solutionrelative:bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\xando\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\xando\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|solutionrelative:mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0947525A-8761-4089-B0C6-A3B3C004A2FC}|XAndO.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 130,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-21T10:59:50.434Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 287,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-11-21T10:59:50.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "ViewState": "AgIAACoAAAAAAAAAAAApwGUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-21T10:59:50.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAWwPsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T10:59:50.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bot.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\Bot.cs",
+              "RelativeDocumentMoniker": "Bot.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\Bot.cs",
+              "RelativeToolTip": "Bot.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAuwIUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T10:59:50.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\XAndO\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T10:59:50.738Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
