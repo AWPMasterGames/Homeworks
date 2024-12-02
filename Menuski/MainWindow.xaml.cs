@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -179,7 +179,7 @@ namespace Menuski
             Tests.Add(new Test(TBoxTestName.Text,LeaderBoard));
             MenuItem newItem = new MenuItem();
             newItem.Header = $"{TBoxTestName.Text}";
-            newItem.Click += LoadTest;
+            //newItem.Click += LoadTest;
 
             TextBlock Testname = new TextBlock();
             TextBlock DateSaveTest = new TextBlock();
