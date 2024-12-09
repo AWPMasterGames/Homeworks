@@ -1,0 +1,15 @@
+C:\Users\ПК\Desktop\C#\sapper\bin\Debug\sapper.exe.config
+C:\Users\ПК\Desktop\C#\sapper\bin\Debug\sapper.exe
+C:\Users\ПК\Desktop\C#\sapper\bin\Debug\sapper.pdb
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper.csproj.AssemblyReference.cache
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\MainWindow.g.cs
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\App.g.cs
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper_MarkupCompile.cache
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper_MarkupCompile.lref
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\MainWindow.baml
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper.g.resources
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper.Properties.Resources.resources
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper.csproj.GenerateResource.cache
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper.exe
+C:\Users\ПК\Desktop\C#\sapper\obj\Debug\sapper.pdb
