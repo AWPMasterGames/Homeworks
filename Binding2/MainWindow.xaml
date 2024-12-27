@@ -1,0 +1,75 @@
+﻿<Window x:Class="Binding2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Binding2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="5" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid Height="70">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <DatePicker Name="DateComplete" Grid.Column="0"/>
+                <TextBox Name="TaskTitle" Grid.Column="1"/>
+                <Button Click="AddTaskButton" Grid.Column="2" Grid.RowSpan="2" Content="Add"/>
+                <TextBox Name="TaskDescription" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+            </Grid>
+            <ListBox Name="TaskListPanel" Grid.Row="1" SelectionChanged="TaskListPanel_SelectionChanged" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Title}" FontSize="15"/>
+                            <TextBlock Margin="10,0,0,0" Text="{Binding DateOfCompletion}" FontSize="15"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <!--<StackPanel Grid.Row="1" >
+                <TextBlock Text="30.06 Title" FontSize="20"/>
+                <TextBlock Text="23.12 Title2" FontSize="20"/>
+            </StackPanel>-->
+            <Button Click="RemoveTaskButton" Grid.Row="2" Content="Delete" Height="20"/>
+        </Grid>
+        <StackPanel Name="TaskPanel" Margin="15,15,15,15" Grid.Column="1">
+            <TextBlock Text="{Binding Title}" FontSize="40" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock Text="{Binding DateOfCompletion}" FontSize="15" HorizontalAlignment="Center" Foreground="#b5b5b5" />
+            <TextBlock Text="{Binding Description}" FontSize="15" TextWrapping="Wrap"/>
+            <ScrollViewer Margin="10,40,10,5" MaxHeight="200">
+                <ListBox ItemsSource="{Binding Path=SubTasks}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox Content="{Binding Name}" IsChecked="{Binding IsCompleted}" FontSize="15"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <!--<StackPanel>
+                    
+                    <CheckBox Content="{Binding SubTasks[0].Name}" IsChecked="{Binding SubTasks[0].IsCompleted}" FontSize="15"/>
+                    <CheckBox Content="{Binding SubTasks[1].Name}" IsChecked="{Binding SubTasks[1].IsCompleted}" FontSize="15"/>
+                    <CheckBox Content="{Binding SubTasks[2].Name}" IsChecked="{Binding SubTasks[2].IsCompleted}" FontSize="15"/>
+                    <CheckBox Content="{Binding SubTasks[3].Name}" IsChecked="{Binding SubTasks[3].IsCompleted}" FontSize="15"/>
+                </StackPanel>-->
+            </ScrollViewer>
+            <Button Click="AddSubTaskWidowButton" Width="100" Height="25" Content="Add" FontSize="15"/>
+            
+        </StackPanel>
+    </Grid>
+</Window>
