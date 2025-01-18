@@ -32,6 +32,7 @@
             InfoRect = new Label();
             RectangleInfo = new Label();
             ErrorInfo = new Label();
+            RectanglCount = new Label();
             SuspendLayout();
             // 
             // Area
@@ -67,16 +68,26 @@
             ErrorInfo.AutoSize = true;
             ErrorInfo.Location = new Point(176, 9);
             ErrorInfo.Name = "ErrorInfo";
-            ErrorInfo.Size = new Size(53, 15);
+            ErrorInfo.Size = new Size(166, 15);
             ErrorInfo.TabIndex = 3;
             ErrorInfo.Text = "Минимальный размер 10х10";
             ErrorInfo.Visible = false;
+            // 
+            // RectanglCount
+            // 
+            RectanglCount.AutoSize = true;
+            RectanglCount.Location = new Point(391, 1);
+            RectanglCount.Name = "RectanglCount";
+            RectanglCount.Size = new Size(38, 15);
+            RectanglCount.TabIndex = 4;
+            RectanglCount.Text = "Количство прямоугольков: 0";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(RectanglCount);
             Controls.Add(ErrorInfo);
             Controls.Add(RectangleInfo);
             Controls.Add(InfoRect);
@@ -93,5 +104,6 @@
         private Label InfoRect;
         private Label RectangleInfo;
         private Label ErrorInfo;
+        private Label RectanglCount;
     }
 }

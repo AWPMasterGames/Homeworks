@@ -65,9 +65,9 @@ namespace WinFormsApp1
             rectangle.BackColor = Color.Gray;
             rectangle.MouseDoubleClick += MouseDoubleCkick;
             rectangle.MouseClick += MouseRightClick;
-
             Area.Controls.Add(rectangle);
             rectangles.Add(new Rectangle($"Rectangle", rectangle, PossX, PossY, PossX2, PossY2));
+            RectanglCount.Text = $"Количство прямоугольков: {rectangles.Count}";
         }
         private void MouseDoubleCkick(object sender, MouseEventArgs e)
         {
@@ -78,6 +78,7 @@ namespace WinFormsApp1
             }
             Area.Controls.Remove((Panel)sender);
             rectangles.RemoveAt(RectangleIndex);
+            RectanglCount.Text = $"Количство прямоугольков: {rectangles.Count}";
         }
         private void MouseDownInArea(object sender, MouseEventArgs e)
         {
