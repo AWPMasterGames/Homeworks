@@ -1,0 +1,16 @@
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\bin\Debug\net8.0-windows\GuessUserNumber.exe
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\bin\Debug\net8.0-windows\GuessUserNumber.deps.json
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\bin\Debug\net8.0-windows\GuessUserNumber.runtimeconfig.json
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\bin\Debug\net8.0-windows\GuessUserNumber.dll
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\bin\Debug\net8.0-windows\GuessUserNumber.pdb
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.Form1.resources
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.csproj.GenerateResource.cache
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.AssemblyInfoInputs.cache
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.AssemblyInfo.cs
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.csproj.CoreCompileInputs.cache
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.dll
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\refint\GuessUserNumber.dll
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.pdb
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\GuessUserNumber.genruntimeconfig.cache
+C:\Users\ПК\source\repos\GuessUserNumber\GuessUserNumber\obj\Debug\net8.0-windows\ref\GuessUserNumber.dll

@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|c:\\users\\\u043F\u043A\\source\\repos\\guessusernumber\\guessusernumber\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|solutionrelative:guessusernumber\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|c:\\users\\\u043F\u043A\\source\\repos\\guessusernumber\\guessusernumber\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|solutionrelative:guessusernumber\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|c:\\users\\\u043F\u043A\\source\\repos\\guessusernumber\\guessusernumber\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|solutionrelative:guessusernumber\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|c:\\users\\\u043F\u043A\\source\\repos\\guessusernumber\\guessusernumber\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE544A8-6D70-4F4C-A16D-90B8F2F998FA}|GuessUserNumber\\GuessUserNumber.csproj|solutionrelative:guessusernumber\\bot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 188,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Form1.cs",
+              "RelativeDocumentMoniker": "GuessUserNumber\\Form1.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "GuessUserNumber\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T10:08:17.878Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 188,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "GuessUserNumber\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Form1.Designer.cs",
+              "RelativeToolTip": "GuessUserNumber\\Form1.Designer.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowGAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T09:33:31.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Form1.cs",
+              "RelativeDocumentMoniker": "GuessUserNumber\\Form1.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Form1.cs",
+              "RelativeToolTip": "GuessUserNumber\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T09:33:22.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bot.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Bot.cs",
+              "RelativeDocumentMoniker": "GuessUserNumber\\Bot.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\GuessUserNumber\\GuessUserNumber\\Bot.cs",
+              "RelativeToolTip": "GuessUserNumber\\Bot.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T10:26:34.272Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
