@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\candymuseu\\candymuseu\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\candymuseu\\candymuseu\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\candymuseu\\candymuseu\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\candymuseu\\storagecontrolwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\storagecontrolwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\candymuseu\\candymuseu\\productcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\productcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\candymuseu\\candymuseu\\classes\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\classes\\storage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\candymuseu\\candymuseu\\storagecontrolwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\storagecontrolwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\candymuseu\\productcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9F057D-6D78-4028-94BE-017370F43B3B}|CandyMuseu\\CandyMuseu.csproj|solutionrelative:candymuseu\\productcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 164,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\MainForm.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\MainForm.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "CandyMuseu\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T10:09:02.237Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StorageControlWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\StorageControlWindow.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\StorageControlWindow.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\StorageControlWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "CandyMuseu\\StorageControlWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:02:17.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\ProductCard.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\ProductCard.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\ProductCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "CandyMuseu\\ProductCard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:02:17.337Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 138,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Storage.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\Classes\\Storage.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\Classes\\Storage.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\Classes\\Storage.cs",
+              "RelativeToolTip": "CandyMuseu\\Classes\\Storage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T09:20:31.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductCard.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\ProductCard.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\ProductCard.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\ProductCard.cs",
+              "RelativeToolTip": "CandyMuseu\\ProductCard.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:02:17.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StorageControlWindow.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\StorageControlWindow.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\StorageControlWindow.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\StorageControlWindow.cs",
+              "RelativeToolTip": "CandyMuseu\\StorageControlWindow.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwBkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:02:17.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\MainForm.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\MainForm.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\MainForm.cs",
+              "RelativeToolTip": "CandyMuseu\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:02:17.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "CandyMuseu\\MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\CandyMuseu\\CandyMuseu\\MainForm.Designer.cs",
+              "RelativeToolTip": "CandyMuseu\\MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:02:17.352Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
