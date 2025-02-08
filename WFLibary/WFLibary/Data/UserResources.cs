@@ -15,8 +15,9 @@ public static class UserResources
         if(ListOfUser == null)
         {
             ListOfUser = new List<User>();
-            ListOfUser.Add(new User("Admin","admin","12345",Permmisions.Admin));
-            ListOfUser.Add(new User("Guest","visitor","12345",Permmisions.Visitor));
+            ListOfUser.Add(new User("Admin","admin","123",Permmisions.Admin));
+            ListOfUser.Add(new User("Worker","worker","123",Permmisions.Worker));
+            ListOfUser.Add(new User("Guest","visitor","123",Permmisions.Visitor));
         }
         return ListOfUser;
     }

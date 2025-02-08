@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Windowes\AdminMainWindow.cs">
+    <Compile Update="Windowes\AdminWindows\AdminMainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Windowes\AdminWindows\UserManagerWindow.cs">
@@ -10,7 +10,10 @@
     <Compile Update="Windowes\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Windowes\VisitorWindow.cs">
+    <Compile Update="Windowes\VisitorWindows\VisitorWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Windowes\WorkerWindows\WorkerPanelWindow.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

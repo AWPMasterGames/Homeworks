@@ -35,8 +35,17 @@ namespace WFLibary
                                 }
                                 break;
 
-                            case Permmisions.Worker: 
-                                
+                            case Permmisions.Worker:
+                                Windowes.WorkerWindows.WorkerPanelWindow WorkerWindow = new Windowes.WorkerWindows.WorkerPanelWindow();
+                                this.Visible = false;
+                                if (WorkerWindow.ShowDialog() == DialogResult.Cancel)
+                                {
+                                    this.Close();
+                                }
+                                else
+                                {
+                                    this.Visible = true;
+                                }
                                 break;
 
                             case Permmisions.Visitor:
