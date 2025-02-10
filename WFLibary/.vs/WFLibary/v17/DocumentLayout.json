@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{B27EE9AE-56DC-45C9-A108-3EA94F451ED9}|WFLibary\\WFLibary.csproj|solutionrelative:wflibary\\windowes\\workerwindows\\workerpanelwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B27EE9AE-56DC-45C9-A108-3EA94F451ED9}|WFLibary\\WFLibary.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\wflibary\\wflibary\\windowes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B27EE9AE-56DC-45C9-A108-3EA94F451ED9}|WFLibary\\WFLibary.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\WFLibary\\wflibary\\windowes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B27EE9AE-56DC-45C9-A108-3EA94F451ED9}|WFLibary\\WFLibary.csproj|solutionrelative:wflibary\\windowes\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,8 +38,7 @@
               "RelativeToolTip": "WFLibary\\Windowes\\WorkerWindows\\WorkerPanelWindow.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAuwHYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:11:05.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-08T11:11:05.037Z"
             },
             {
               "$type": "Document",
@@ -62,8 +61,7 @@
               "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\WFLibary\\WFLibary\\Windowes\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "RelativeToolTip": "WFLibary\\Windowes\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-08T11:05:51.715Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+              "WhenOpened": "2025-02-08T11:05:51.715Z"
             }
           ]
         },
@@ -79,7 +77,7 @@
               "RelativeDocumentMoniker": "WFLibary\\Windowes\\VisitorWindows\\VisitorWindow.cs",
               "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\WFLibary\\WFLibary\\Windowes\\VisitorWindows\\VisitorWindow.cs",
               "RelativeToolTip": "WFLibary\\Windowes\\VisitorWindows\\VisitorWindow.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAxwCsAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwCIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T11:08:25.129Z",
               "EditorCaption": ""

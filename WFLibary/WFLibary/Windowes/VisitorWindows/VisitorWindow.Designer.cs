@@ -63,7 +63,6 @@
             // 
             // textBox3
             // 
-            textBox3.Enabled = false;
             textBox3.Location = new Point(267, 79);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
