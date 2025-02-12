@@ -14,11 +14,18 @@ namespace CandyMuseu
 
         private void button3_Click(object sender, EventArgs e)
         {
-            StorageControlWindow storageControlWindow = new StorageControlWindow();
-            if (storageControlWindow.ShowDialog() == DialogResult.OK)
+
+            LoginWindow loginWindow = new LoginWindow();
+            if (loginWindow.ShowDialog() == DialogResult.OK)
             {
-                comboBox1.Items.Clear();
-                comboBox1.Items.AddRange(Storage.GetProducts().ToArray());
+                this.Visible = false;
+                StorageControlWindow storageControlWindow = new StorageControlWindow();
+                if (storageControlWindow.ShowDialog() == DialogResult.OK)
+                {
+                    comboBox1.Items.Clear();
+                    comboBox1.Items.AddRange(Storage.GetProducts().ToArray());
+                    this.Visible = true;
+                }
             }
         }
 
@@ -46,16 +53,70 @@ namespace CandyMuseu
             checkedListBox1.Items.Add($"{product.Name} * {numericUpDown1.Value} - {product.Price}");
 
         }
+        private bool ProductExistIntTSP(string name)
+        {
+            for(int i = 0; i < TotalSeledProducts.Count; i++)
+            {
+                if (TotalSeledProducts[i].Name == name)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (checkedListBox1.CheckedItems.Count == 0) return;
+            int CBselectItem = comboBox1.SelectedIndex;
             List<Product> products = new List<Product>();
+            string sProducts = "";
             TotalSaledCost += CheckCost;
-            for (int i = 0; i < checkedListBox1.SelectedIndices.Count; i++)
+            for (int i = 0; i < checkedListBox1.CheckedIndices.Count; i++)
             {
-                products.Add(ProductsInÑheck[checkedListBox1.SelectedIndices[i]]);
-                TotalSeledProducts.Add(ProductsInÑheck[checkedListBox1.SelectedIndices[i]]);
+                products.Add(ProductsInÑheck[checkedListBox1.CheckedIndices[i]]);
+                if (ProductExistIntTSP(ProductsInÑheck[checkedListBox1.CheckedIndices[i]].Name))
+                {
+                    for (int j = 0; j < TotalSeledProducts.Count; j++)
+                    {
+                        if (TotalSeledProducts[j].Name == ProductsInÑheck[checkedListBox1.CheckedIndices[i]].Name)
+                        {
+                            TotalSeledProducts[j].Count += ProductsInÑheck[checkedListBox1.CheckedIndices[i]].Count;
+                            TotalSeledProducts[j].Price += ProductsInÑheck[checkedListBox1.CheckedIndices[i]].Price;
+                        }
+                    }
+                }
+                else
+                {
+                    TotalSeledProducts.Add(ProductsInÑheck[checkedListBox1.CheckedIndices[i]]);
+                }
             }
+            for (int i = 0; i < products.Count; i++)
+            {
+                sProducts += $"{products[i].Name}   {products[i].Count}øò.   {products[i].Price}ð.\n";
+            }
+            sProducts += $"\n\nÑóììà ÷åêà: {CheckCost}ð";
+            for (int i = 0; i < checkedListBox1.CheckedIndices.Count; i++)
+            {
+                for (int j = 0; j < Storage.Products.Count; j++)
+                {
+                    if (Storage.Products[j].Name == products[checkedListBox1.CheckedIndices[i]].Name)
+                    {
+                        Storage.Products[j].Count -= products[checkedListBox1.CheckedIndices[i]].Count;
+                    }
+                }
+            }
+            comboBox1.Items.Clear();
+            comboBox1.Items.AddRange(Storage.GetProducts().ToArray());
+            comboBox1.SelectedIndex = CBselectItem;
+            for (int i = checkedListBox1.CheckedIndices.Count; i > 0; i--)
+            {
+
+                ProductsInÑheck.RemoveAt(checkedListBox1.CheckedIndices[checkedListBox1.CheckedIndices.Count - 1]);
+                checkedListBox1.Items.Remove(checkedListBox1.Items[checkedListBox1.CheckedIndices[checkedListBox1.CheckedIndices.Count - 1]]);
+            }
+            MessageBox.Show(sProducts);
+
         }
         private void UpdateCost()
         {
@@ -65,11 +126,24 @@ namespace CandyMuseu
                 cost += ProductsInÑheck[checkedListBox1.CheckedIndices[i]].Price;
             }
             CheckCost = cost;
-            CostL.Text = cost.ToString();
+            CostL.Text = $"{cost}ð.";
         }
         private void checkedListBox1_CheckedIndex(object sender, EventArgs e)
         {
             UpdateCost();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string sProducts = "";
+            for(int i = 0; i < TotalSeledProducts.Count; i++)
+            {
+                sProducts += $"{TotalSeledProducts[i].Name}   {TotalSeledProducts[i].Count}øò.   {TotalSeledProducts[i].Price}ð.\n";
+            }
+            sProducts += $"\n\nÑóììà ÷åêà: {TotalSaledCost}ð";
+            TotalSeledProducts.Clear();
+            TotalSaledCost = 0;
+            MessageBox.Show(sProducts);
         }
     }
 }
