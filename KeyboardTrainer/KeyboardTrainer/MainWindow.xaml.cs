@@ -143,14 +143,14 @@ namespace KeyboardTrainer
             for (int i = 0; i < TextDifficulty; i++)
             {
                 temp = temp + Keys[new Random().Next(Keys.Length - 1)];
-                Thread.Sleep(3);
+                Thread.Sleep(7);
             }
             symbols = temp.ToCharArray();
             for (int i = 0; i < new Random().Next(2, 6); i++)
             {
                 SymbolsCount++;
                 SecondField.Text = SecondField.Text + symbols[new Random().Next(symbols.Length - 1)].ToString();
-                Thread.Sleep(3);
+                Thread.Sleep(11);
             }
         }
         private void SubRandomKey()
