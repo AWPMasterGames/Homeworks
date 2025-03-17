@@ -21,7 +21,6 @@ namespace Binding2
     /// </summary>
     public partial class MainWindow : Window
     {
-        
         public MainWindow()
         {
             
@@ -44,11 +43,10 @@ namespace Binding2
             TaskDerictory.AddTask(new Task(TaskTitle.Text, TaskDescription.Text,DateComplete.Text));
             TaskListPanel.ItemsSource = TaskDerictory.GetTask();
         }
-        private void AddSubTaskWidowButton(object sender, RoutedEventArgs e)
+        private void AddSubTaskButton(object sender, RoutedEventArgs e)
         {
             Window1 AddSubTaskWindow = new Window1();
             AddSubTaskWindow.Show();
-            TaskDerictory.CurrentTask = (Task)TaskListPanel.SelectedItem;
         }
         private void RemoveTaskButton(object sender, RoutedEventArgs e)
         {

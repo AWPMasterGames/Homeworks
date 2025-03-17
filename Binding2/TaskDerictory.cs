@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 static class TaskDerictory
 {
     private static ObservableCollection<Task> Tasks;
-    public static Task CurrentTask;
 
     public static ObservableCollection<Task> GetTask()
     {

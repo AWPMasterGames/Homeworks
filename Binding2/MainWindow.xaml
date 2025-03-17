@@ -68,7 +68,7 @@
                     <CheckBox Content="{Binding SubTasks[3].Name}" IsChecked="{Binding SubTasks[3].IsCompleted}" FontSize="15"/>
                 </StackPanel>-->
             </ScrollViewer>
-            <Button Click="AddSubTaskWidowButton" Width="100" Height="25" Content="Add" FontSize="15"/>
+            <Button Click="AddSubTaskButton" Width="100" Height="25" Content="Add" FontSize="15"/>
             
         </StackPanel>
     </Grid>

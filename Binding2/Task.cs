@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +17,9 @@ class Task
     public string Title { get; set; }
     public string DateOfCompletion { get; set; }
     public string Description {  get; set; }
-    public ObservableCollection<SubTask> SubTasks { get; set; }  = new ObservableCollection<SubTask>();
+    public List<SubTask> SubTasks { get; set; }  = new List<SubTask>();
 
-    public Task() { }
+
     public Task(string title, string description , string dateOfCompletion)
     {
         Title = title;
