@@ -1,0 +1,17 @@
+C:\Users\student\Desktop\WeatherMenu\bin\Debug\WeatherMenu.exe.config
+C:\Users\student\Desktop\WeatherMenu\bin\Debug\WeatherMenu.exe
+C:\Users\student\Desktop\WeatherMenu\bin\Debug\WeatherMenu.pdb
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu.csproj.AssemblyReference.cache
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\MainWindow.g.cs
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\App.g.cs
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu_MarkupCompile.cache
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu_MarkupCompile.lref
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\MainWindow.baml
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu.g.resources
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu.Properties.Resources.resources
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu.csproj.GenerateResource.cache
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu.exe
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\WeatherMenu.pdb
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\Icons.baml
+C:\Users\student\Desktop\WeatherMenu\obj\Debug\App.baml
