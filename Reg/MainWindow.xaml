@@ -11,52 +11,19 @@
         SizeChanged="Window_SizeChanged"
         Name="RegWindow"
         >
-
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ButtonsStyles.xaml"/>
+                <ResourceDictionary Source="/BackgroundStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+        
 
     <Grid>
 
-        <ScrollViewer Name="RegistrationPanel" VerticalScrollBarVisibility="Visible"
-                      Visibility="Visible">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="9*"/>
-                    <ColumnDefinition Width="62*"/>
-                    <ColumnDefinition Width="9*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="55*"/>
-                    <RowDefinition Height="15*"/>
-                    <RowDefinition Height="55*"/>
-                    <RowDefinition Height="15*"/>
-                    <RowDefinition Height="55*"/>
-                    <RowDefinition Height="15*"/>
-                    <RowDefinition Height="55*"/>
-                    <RowDefinition Height="15*"/>
-                    <RowDefinition Height="55*"/>
-                    <RowDefinition Height="15*"/>
-                    <RowDefinition Height="55*"/>
-                    <RowDefinition Height="37*"/>
-                    <RowDefinition Height="37*"/>
-                </Grid.RowDefinitions>
-                <TextBox Name="Username" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,0" Text="Username" Foreground="#FFB5B5B5" FontSize="36"/>
-                <TextBox Name="Email" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Margin="0,0,0,0" Text="E-mail" Foreground="#FFB5B5B5" FontSize="36"/>
-                <PasswordBox Name="Password" Grid.Column="1" PasswordChanged="PasswordChanged" Grid.Row="6" Password="12345" Margin="0,0,0,0" Foreground="#FFB5B5B5" FontSize="36"/>
-                <PasswordBox Name="CPassword" Grid.Column="1" Grid.Row="8" Password="12345" Margin="0,0,0,0" Foreground="#FFB5B5B5" FontSize="36"/>
-                <DatePicker Name="Birthday" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="10" Width="310" Foreground="#FFB5B5B5" FontSize="36"/>
-
-
-                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="0" TextWrapping="Wrap" Text="Register new user" VerticalAlignment="Center" Height="60" FontSize="36" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Width="310"/>
-                <TextBlock Name="UsernameInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <TextBlock Name="PasswordInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <TextBlock Name="CPasswordInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Confirm password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <TextBlock Name="DateInfoInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="9" TextWrapping="Wrap" Text="Birth date" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <Button Click="RegisterBtn" Grid.Column="1" Content="Register" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="11" VerticalAlignment="Center" Width="268" Height="21"/>
-                <Button Click="LoginPanelButton" Grid.Column="1" Content="Login" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="12" VerticalAlignment="Center" Width="268" Height="21"/>
-
-            </Grid>
-        </ScrollViewer>
-        <ScrollViewer Name="LoginPanel" Height="400" VerticalScrollBarVisibility="Visible"
+        <ScrollViewer Name="RegistrationPanel" VerticalScrollBarVisibility="Hidden" Style="{StaticResource BackgroudStyle1}"
                       Visibility="Hidden">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -77,21 +44,62 @@
                     <RowDefinition Height="15*"/>
                     <RowDefinition Height="55*"/>
                     <RowDefinition Height="37*"/>
+                    <RowDefinition Height="37*"/>
                 </Grid.RowDefinitions>
-                <TextBox Name="Login" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,0" Text="Username" Foreground="#FFB5B5B5" FontSize="36"/>
-                <PasswordBox Name="LPassword" Grid.Column="1" PasswordChanged="PasswordChanged" Grid.Row="4" Password="12345" Margin="0,0,0,0" Foreground="#FFB5B5B5" FontSize="36"/>
-                <Button Click="LoginBtn" Grid.Column="1" Content="Login" Margin="0,00,00,00" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Width="268" Height="36"/>
+                <TextBox Style="{StaticResource BackgroudStyle2TBox}" Name="Username" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,0" Text="Username" FontSize="36"/>
+                <TextBox Style="{StaticResource BackgroudStyle2TBox}" Name="Email" Grid.Column="1" Grid.Row="4" TextWrapping="Wrap" Margin="0,0,0,0" Text="E-mail" FontSize="36"/>
+                <PasswordBox Style="{StaticResource BackgroudStyle2Pass}" Name="Password" Grid.Column="1" PasswordChanged="PasswordChanged" Grid.Row="6" Password="12345" Margin="0,0,0,0"  FontSize="36"/>
+                <PasswordBox Style="{StaticResource BackgroudStyle2Pass}" Name="CPassword" Grid.Column="1" Grid.Row="8" Password="12345" Margin="0,0,0,0" FontSize="36"/>
+                <DatePicker Background="Gray" Name="Birthday" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="10" Width="310" FontSize="36"/>
+
+
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="0" TextWrapping="Wrap" Text="Register new user" VerticalAlignment="Center" Height="60" FontSize="36" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Width="310"/>
+                <TextBlock Name="UsernameInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="PasswordInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="CPasswordInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Confirm password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <TextBlock Name="DateInfoInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="9" TextWrapping="Wrap" Text="Birth date" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
+                <Button Click="RegisterBtn" Style="{StaticResource YesButton}" Grid.Column="1" Content="Register" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="11" VerticalAlignment="Center" Width="268" Height="21"/>
+                <Button Click="LoginPanelButton" Style="{StaticResource NeutralButton}" Grid.Column="1" Content="Login" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="12" VerticalAlignment="Center" Width="268" Height="21"/>
+
+            </Grid>
+        </ScrollViewer>
+        <ScrollViewer Name="LoginPanel" VerticalScrollBarVisibility="Hidden" Style="{StaticResource BackgroudStyle1}"
+                      Visibility="Visible">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="62*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="15*"/>
+                    <RowDefinition Height="55*"/>
+                    <RowDefinition Height="37*"/>
+                </Grid.RowDefinitions>
+                <TextBox Style="{StaticResource BackgroudStyle2TBox}" Name="Login" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Margin="0,0,0,0" Text="Username" FontSize="36"/>
+                <PasswordBox  Style="{StaticResource BackgroudStyle2Pass}" Name="LPassword" Grid.Column="1" PasswordChanged="PasswordChanged" Grid.Row="4" Password="12345" Margin="0,0,0,0" FontSize="36"/>
+                <Button Click="LoginBtn" Style="{StaticResource YesButton}" Grid.Column="1" Content="Login" Margin="0,00,00,00" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Width="268" Height="36"/>
 
 
                 <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Center" Height="60" FontSize="36" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Width="310"/>
                 <TextBlock Name="UsernameInfo1" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
                 <TextBlock Name="PasswordInfo1" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
                 <TextBlock Name="LoginInfo" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <Button Click="RegPanelButton" Grid.Column="1" Content="Registration" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" Width="268" Height="36"/>
+                <Button Click="RegPanelButton" Style="{StaticResource NeutralButton}" Grid.Column="1" Content="Registration" Margin="10,10,10,10" HorizontalAlignment="Center" Grid.Row="7" VerticalAlignment="Center" Width="268" Height="36"/>
 
             </Grid>
         </ScrollViewer>
-        <ScrollViewer Name="Userpanel" Height="500" VerticalScrollBarVisibility="Visible"
+        <ScrollViewer Name="Userpanel" Height="500" VerticalScrollBarVisibility="Hidden" Style="{StaticResource BackgroudStyle1}"
                Visibility="Hidden">
             <Grid Height="441">
                 <Grid.ColumnDefinitions>
@@ -124,7 +132,7 @@
                 <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
                 <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
                 <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Birthday" VerticalAlignment="Center" Height="17" RenderTransformOrigin="0.5,0.5" Width="310"/>
-                <Button Click="ExitBtn" Grid.Column="1" Content="Exit" Margin="0,8,0,0" HorizontalAlignment="Center" Grid.Row="10" VerticalAlignment="Top" Width="268" Height="36"/>
+                <Button Click="ExitBtn" Style="{StaticResource NoButton}" Grid.Column="1" Content="Exit" Margin="0,8,0,0" HorizontalAlignment="Center" Grid.Row="10" VerticalAlignment="Top" Width="268" Height="36"/>
 
             </Grid>
         </ScrollViewer>
