@@ -1,0 +1,112 @@
+﻿<Window x:Class="kontr.windowes.FinalWindow2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kontr.windowes"
+        mc:Ignorable="d"
+        Title="FinalWindow2" Height="650" Width="800">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/Backgrounds.xaml"/>
+                <ResourceDictionary Source="/Styles/TextBlockStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="{StaticResource Gradient3}" Name="MainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="1.2*"/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="3" Grid.Column="1" Width="125" BorderBrush="Black" Height="125" Grid.Row="0" CornerRadius="60" Padding="0"
+HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Border Name="mask" Background="White" CornerRadius="60"/>
+                <StackPanel>
+                    <StackPanel.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=mask}"/>
+                    </StackPanel.OpacityMask>
+                    <Image Name="UserPhoto" />
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Фамилия Имя Отчество" Style="{StaticResource Title}" VerticalAlignment="Bottom"/>
+            <TextBlock Text="{Binding Name}" Grid.Row="1" FontSize="25" Height="50"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="ЛИЧНАЯ ИНФОРМАЦИЯ" Style="{StaticResource Title}" Grid.ColumnSpan="2" Background="DarkOrange"/>
+            <TextBlock Text="Элиектронная почта:" Style="{StaticResource Title}" Grid.Row="1" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+            <TextBlock Text="Номер телефона:" Style="{StaticResource Title}" Grid.Row="2" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+            <TextBlock Text="Дата рождения:" Style="{StaticResource Title}" Grid.Row="3" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+
+            <TextBlock Grid.Row="1" Text="{Binding Email}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+            <TextBlock Grid.Row="2" Text="{Binding Phone}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+            <TextBlock Grid.Row="3" Text="{Binding DateOfBirth}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="ОПЫТ РАБОТЫ" Style="{StaticResource Title}" Grid.ColumnSpan="2" Background="DarkOrange"/>
+            <TextBlock Text="Должность:" Grid.Row="1" Style="{StaticResource Title}" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+            <TextBlock Text="Опыт работы:" Grid.Row="2" Style="{StaticResource Title}" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+            <TextBlock Text="Должностные обязаности:" Grid.Row="3" Style="{StaticResource Title}" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="2"/>
+
+            <TextBlock Grid.Row="1" Text="{Binding Post}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+            <TextBlock Grid.Row="2" Text="{Binding WorkTime}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+            <TextBlock Grid.Row="3" Text="{Binding Duties}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+
+        </Grid>
+        <Grid Grid.Row="2" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="ОБРАЗОВАНИЕ" Style="{StaticResource Title}" Background="DarkOrange" Grid.ColumnSpan="2" Margin="5"/>
+            <TextBlock Text="Специализация:" Style="{StaticResource Title}" Grid.Row="1" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="3"/>
+            <TextBlock Text="Факультет:" Style="{StaticResource Title}" Grid.Row="2" FontSize="20" Margin="5,5,5,5" Grid.ColumnSpan="3"/>
+
+            <TextBlock Grid.Row="1" Text="{Binding Specialization}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+            <TextBlock Grid.Row="2" Text="{Binding Faculty}" Grid.Column="2" FontSize="20" Margin="5,5,5,5"/>
+
+        </Grid>
+        <Button Grid.Row="4" Height="40" Width="125" Content="Главное меню" FontSize="15" Click="Button_Click"/>
+        <Button Grid.Row="4" Grid.Column="1" Height="40" Width="125" Content="Сохранить" FontSize="15" Click="Button_Click_1"/>
+    </Grid>
+</Window>

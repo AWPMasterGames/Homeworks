@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\kontr\\kontr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|solutionrelative:kontr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|c:\\users\\\u043F\u043A\\desktop\\c#\\kontr\\kontr\\windowes\\step1_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|solutionrelative:kontr\\windowes\\step1_1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|solutionrelative:kontr\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\finalwindow2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|solutionrelative:kontr\\windowes\\finalwindow2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|solutionrelative:kontr\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\step1_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|solutionrelative:kontr\\windowes\\step1_1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\finalwindow2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C410EDB8-EA3B-46E1-A05E-0B5EA47AA6F9}|kontr\\kontr.csproj|solutionrelative:kontr\\windowes\\finalwindow2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 75,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FinalWindow2.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\FinalWindow2.xaml",
+              "RelativeDocumentMoniker": "kontr\\windowes\\FinalWindow2.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\FinalWindow2.xaml",
+              "RelativeToolTip": "kontr\\windowes\\FinalWindow2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-22T10:05:09.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "kontr\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\MainWindow.xaml",
+              "RelativeToolTip": "kontr\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-22T10:05:09.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "kontr\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\MainWindow.xaml.cs",
+              "RelativeToolTip": "kontr\\MainWindow.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAADgvx4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T10:05:09.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Step1_1.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\Step1_1.xaml",
+              "RelativeDocumentMoniker": "kontr\\windowes\\Step1_1.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\Step1_1.xaml",
+              "RelativeToolTip": "kontr\\windowes\\Step1_1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-22T10:05:10.068Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 75,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Step1_1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\Step1_1.xaml.cs",
+              "RelativeDocumentMoniker": "kontr\\windowes\\Step1_1.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\Step1_1.xaml.cs",
+              "RelativeToolTip": "kontr\\windowes\\Step1_1.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwCMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T10:05:10.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\Classes\\User.cs",
+              "RelativeDocumentMoniker": "kontr\\Classes\\User.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\Classes\\User.cs",
+              "RelativeToolTip": "kontr\\Classes\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAB/AAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADtSURBVDhPYxgFCHDh4YX/sQtj/6u3qP9XblL\u002BHzk/8j9UiuHtx7f/VZpVwHxkNggwgohLjy79D18SzmAua86QZJbEwM/Bz3D91XWGCNMIRpAGo34jsGJkwMrMynCn9g5YP0PK0pT/3tO9/3/58gVuMjLA5wImEHH68WkGN3U3Bh4eHoiJJACwAb/\u002B/gI7CRuAeeH3398M8g3ycDayKxjC5oX9D54TjNX5IIDPC2Ann7x78n/E4ggGDw0PhgiDCLBrLj2/xJBhl0HQS3AFe67t\u002BT/lyBSGO2/uMHCxcTHYK9szdAd2kxwmIw8wMAAAESl0qwYO77cAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-03-22T10:05:10.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "windowes\\FinalWindow2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\FinalWindow2.xaml.cs",
+              "RelativeDocumentMoniker": "kontr\\windowes\\FinalWindow2.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\Desktop\\C#\\kontr\\kontr\\windowes\\FinalWindow2.xaml.cs",
+              "RelativeToolTip": "kontr\\windowes\\FinalWindow2.xaml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAIAwwDkAAAAMAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPY0AGretv/t9x7tl/KJd0sOfii/\u002Bimfv\u002Bbzv7lGhDGBlid2Eo1pTkZNiSLsVQWVkJFWFgYGdnZygoKGAwNjZmhAphgt0XnsFd8P79\u002B/9Pnz6F47CwsP/R0dH/z549i2IhE5QGg1P3PzMsTtVgsFTiYvj27RtUFAF\u002B//7N0NfXx4BsCIoBIVoMDOaKnFg1wwDIkAkTJkB5oDBAAnFxcf/b29uhPNygsLCQYdWqVWC9KC748eMHlEU8QDGAHDBqABUMQEkHmZmZ/9\u002B\u002BfQvl4QbCwsIM06dPx50niAcMDADfJl5g9BqhpwAAAABJRU5ErkJggg==",
+              "WhenOpened": "2025-03-22T10:05:10.076Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

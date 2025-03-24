@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="kontr.Constrols.Form1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:kontr.Constrols"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    
+    <Grid Background="{StaticResource Gradient2}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="3" Width="30" BorderBrush="Black" Height="30" Grid.Row="0" CornerRadius="60" Padding="0"
+HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid>
+                <Border Name="mask" Background="White" CornerRadius="60"/>
+                <StackPanel>
+                    <StackPanel.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=mask}"/>
+                    </StackPanel.OpacityMask>
+                    <Image Source="/download.jpg" />
+                </StackPanel>
+            </Grid>
+        </Border>
+        <TextBlock Margin="10" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="ФИО" FontSize="15"/>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="ЛИЧНАЯ ИНФОРМАЦИЯ" FontSize="10" />
+            <TextBlock Text="Элиектронная почта" FontSize="5" />
+            <TextBlock Text="Номер телефона" FontSize="5" />
+            <TextBlock Text="Дата рождения" FontSize="5" />
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="ОПЫТ РАБОТЫ" FontSize="10" />
+            <TextBlock Text="Должность" FontSize="5" />
+            <TextBlock Text="Опыт работы" FontSize="5" />
+            <TextBlock Text="Должностные обязаности" FontSize="5" />
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <TextBlock Text="ОБРОЗОВАНИЕ" FontSize="10" />
+            <TextBlock Text="Специализация" FontSize="5" />
+            <TextBlock Text="Факультет" FontSize="5" />
+        </StackPanel>
+    </Grid>
+</UserControl>
