@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|c:\\users\\\u043F\u043A\\source\\repos\\tebegrammmm\\tebegrammmm\\chatsfoldersredactswindows\\addfolderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\chatsfoldersredactswindows\\addfolderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\tebegrammmm\\chatsfoldersredactswindows\\redactcionchatsfolderswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\chatsfoldersredactswindows\\redactcionchatsfolderswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\tebegrammmm\\chatsfoldersredactswindows\\redactcionchatsfolderswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\chatsfoldersredactswindows\\redactcionchatsfolderswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\tebegrammmm\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\tebegrammmm\\chatfolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\chatfolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\tebegrammmm\\messengerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\messengerwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\tebegrammmm\\messengerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\messengerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\tebegrammmm\\usersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12665B33-2E58-4457-AECB-8FB2B752F3C2}|Tebegrammmm\\Tebegrammmm.csproj|solutionrelative:tebegrammmm\\usersdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 45,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddFolderWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatsFoldersRedactsWindows\\AddFolderWindow.xaml",
+              "RelativeDocumentMoniker": "Tebegrammmm\\ChatsFoldersRedactsWindows\\AddFolderWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatsFoldersRedactsWindows\\AddFolderWindow.xaml",
+              "RelativeToolTip": "Tebegrammmm\\ChatsFoldersRedactsWindows\\AddFolderWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-05T09:35:54.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RedactcionChatsFoldersWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml",
+              "RelativeDocumentMoniker": "Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml",
+              "RelativeToolTip": "Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-01T11:08:23.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml.cs",
+              "RelativeToolTip": "Tebegrammmm\\ChatsFoldersRedactsWindows\\RedactcionChatsFoldersWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAD4vyIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T08:52:02.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatFolder.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatFolder.cs",
+              "RelativeDocumentMoniker": "Tebegrammmm\\ChatFolder.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\ChatFolder.cs",
+              "RelativeToolTip": "Tebegrammmm\\ChatFolder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T12:38:30.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\Contact.cs",
+              "RelativeDocumentMoniker": "Tebegrammmm\\Contact.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\Contact.cs",
+              "RelativeToolTip": "Tebegrammmm\\Contact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T13:06:36.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MessengerWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\MessengerWindow.xaml",
+              "RelativeDocumentMoniker": "Tebegrammmm\\MessengerWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\MessengerWindow.xaml",
+              "RelativeToolTip": "Tebegrammmm\\MessengerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-26T11:15:32.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MessengerWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\MessengerWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Tebegrammmm\\MessengerWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\MessengerWindow.xaml.cs",
+              "RelativeToolTip": "Tebegrammmm\\MessengerWindow.xaml.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAqwM0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T11:19:25.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsersData.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\UsersData.cs",
+              "RelativeDocumentMoniker": "Tebegrammmm\\UsersData.cs",
+              "ToolTip": "C:\\Users\\\u041F\u041A\\source\\repos\\Tebegrammmm\\Tebegrammmm\\UsersData.cs",
+              "RelativeToolTip": "Tebegrammmm\\UsersData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T10:33:02.26Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
