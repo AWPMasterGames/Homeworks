@@ -31,8 +31,34 @@ namespace Tebegrammmm.ChatsFoldersRedactsWindows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AddFolderWindow addFolderWindow = new AddFolderWindow();
-            addFolderWindow.ShowDialog();
+            ChatFolder newFolder = new ChatFolder();
+
+            AddFolderWindow addFolderWindow = new AddFolderWindow(ChatFolders, newFolder);
+            if(addFolderWindow.ShowDialog() == true)
+            {
+                ChatFolders.Add(newFolder);
+            }
+        }
+
+        private void LBChatsFolders_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (LBChatsFolders.SelectedItem == null)
+            {
+                LBChatsFolders.SelectedIndex = -1;
+                return;
+            }
+            else if((LBChatsFolders.SelectedItem as ChatFolder).IsCanRedact)
+            {
+                RedactFolderContatcsWindow RFCW = new RedactFolderContatcsWindow(ChatFolders, (LBChatsFolders.SelectedItem as ChatFolder));
+                RFCW.ShowDialog();
+                LBChatsFolders.ItemsSource = ChatFolders;
+            }
+            LBChatsFolders.SelectedIndex = -1;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

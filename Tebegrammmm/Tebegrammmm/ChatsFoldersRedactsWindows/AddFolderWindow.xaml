@@ -12,6 +12,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Новая папка" FontSize="20"/>
         <Grid Grid.Row="1" Margin="0,20,0,0">
@@ -27,15 +28,65 @@
             <TextBox Name="TBoxFolderName" Grid.Row="1" FontSize="15" Grid.ColumnSpan="2"/>
             <TextBlock Grid.Row="1" Grid.Column="1" Text="📁" FontSize="20"/>
         </Grid>
-        <ListBox Grid.Row="2">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions >
-                <local1:UserControl1/>
-                <TextBlock Text="12312312132" Grid.Column="1"/>
+        <ScrollViewer Grid.Row="2" Height="250">
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Контакты "/>
+                    <ListBox x:Name="LBMyContacts" Grid.Row="1" SelectionChanged="LBMyContacts_SelectionChanged">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions >
+                                    <local1:UserControl1/>
+                                    <TextBlock Text="{Binding Name}" Grid.Column="1"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Добавленые контакты"/>
+                    <ListBox x:Name="LBFolderContacts" Grid.Row="1" SelectionChanged="LBFolderContacts_SelectionChanged">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions >
+                                    <local1:UserControl1/>
+                                    <TextBlock Text="{Binding Name}" Grid.Column="1"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
             </Grid>
-        </ListBox>
+        </ScrollViewer>
+        <Grid Grid.Row="3" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Height="30" Width="100" Content="Сохранить" Margin="32,0,33,0" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Grid.Column="1" Height="30" Width="100" Content="Отмена" Click="Button_Click_1"/>
+        </Grid>
     </Grid>
 </Window>

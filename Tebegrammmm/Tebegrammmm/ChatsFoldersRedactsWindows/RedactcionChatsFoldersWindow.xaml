@@ -9,9 +9,13 @@
     <Grid>
         <ScrollViewer Margin="10">
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
                 <StackPanel>
                     <TextBlock Text="Мои Папки" Foreground="#0077fa" FontSize="20"/>
-                    <ListBox Name="LBChatsFolders">
+                    <ListBox Name="LBChatsFolders" SelectionChanged="LBChatsFolders_SelectionChanged">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <Grid>
@@ -32,6 +36,7 @@
                     </ListBox>
                     <Button Height="35" Background="Transparent" Content="Добавить новую папку" FontSize="20" Foreground="#0077fa" Click="Button_Click"/>
                 </StackPanel>
+                <Button Grid.Row="1" Height="30" Width="100" Content="Закончить" Click="Button_Click_1"/>
             </Grid>
         </ScrollViewer>
     </Grid>

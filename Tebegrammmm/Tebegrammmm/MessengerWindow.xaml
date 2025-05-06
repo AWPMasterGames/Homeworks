@@ -13,6 +13,7 @@
             <ColumnDefinition Width="80"/>
             <ColumnDefinition Width="250"/>
             <ColumnDefinition/>
+            <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
         <!--Левая панель-->
         <Grid Background="#303c4c">
@@ -104,7 +105,7 @@
                     <TextBlock Text="⋮" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
             </Grid>
-            <ListBox x:Name="LBMessages" Grid.Row="1" >
+            <ListBox x:Name="LBMessages" Grid.Row="1" SelectionChanged="LBMessages_SelectionChanged" >
                 <ListBox.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="LightYellow" Offset="0.1"/>
@@ -122,6 +123,7 @@
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
                                 <TextBlock Text="{Binding Sender}" Margin="5,0" Foreground="#FF4200FF"/>
+                                
                                 <TextBlock Grid.Row="1" Text="{Binding Text}" TextWrapping="Wrap" FontSize="15" Margin="5,0"/>
                                 <TextBlock Grid.Row="2" Text="{Binding Time}" Foreground="#FF7D7D7D" FontSize="10" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
                             </Grid>
@@ -132,13 +134,15 @@
             </ListBox>
             <Grid x:Name="GridMessege" Grid.Row="2">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
                     <ColumnDefinition/>
                     <ColumnDefinition Width="auto"/>
                 </Grid.ColumnDefinitions>
-                <ScrollViewer Margin="10">
+                <Button Width="40" Content="📄" FontSize="20" Background="Transparent" Click="Button_Click_4"/>
+                <ScrollViewer Grid.Column="1" Margin="10">
                     <TextBox x:Name="TBMessage" KeyDown="TBMessage_KeyDown" TextWrapping="Wrap" FontSize="15"/>
                 </ScrollViewer>
-                <Button Grid.Column="1" Width="40" Content="⌯⌲" Background="Transparent" Margin="10" Click="Button_Click"/>
+                <Button Grid.Column="2" Width="40" Content="⌯⌲" Background="Transparent" Margin="10" Click="Button_Click"/>
             </Grid>
         </Grid>
     </Grid>

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Diagnostics;
 using System.Diagnostics.Contracts;
 using System.IO;
 using System.Net;
+using System.Net.Http;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -10,7 +12,10 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Net.Http.Headers;
 using Tebegrammmm.ChatsFoldersRedactsWindows;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Tebegrammmm
 {
@@ -19,6 +24,9 @@ namespace Tebegrammmm
     /// </summary>
     public partial class MessengerWindow : Window
     {
+        static HttpClient httpClient = new HttpClient();
+        string serverAdress = "https://localhost:7034/upload";
+
         User User { get; set; }
         Contact Contact { get; set; }
 
@@ -53,7 +61,7 @@ namespace Tebegrammmm
 
         private void LBChatsLoders_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if(LBChatsLoders.SelectedItem == null)
+            if (LBChatsLoders.SelectedItem == null)
             {
                 return;
             }
@@ -87,11 +95,22 @@ namespace Tebegrammmm
                     {
                         if (messageData[0] == contact.IPAddress.ToString() & Convert.ToInt32(messageData[1]) == contact.Port)
                         {
-                            Message message = new Message(contact.Name, messageData[3], messageData[2]);
-                            this.Dispatcher.BeginInvoke(new Action(() =>
+                            if (messageData[2] == "Text")
                             {
-                                contact.Messages.Add(message);
-                            }));
+                                Message message = new Message(contact.Name, messageData[4], messageData[3]);
+                                this.Dispatcher.BeginInvoke(new Action(() =>
+                                {
+                                    contact.Messages.Add(message);
+                                }));
+                            }
+                            if (messageData[2] == "File")
+                            {
+                                Message message = new Message(contact.Name, messageData[4], messageData[3],MessageType.File);
+                                this.Dispatcher.BeginInvoke(new Action(() =>
+                                {
+                                    contact.Messages.Add(message);
+                                }));
+                            }
                         }
                     }
                     client.Close();
@@ -119,6 +138,7 @@ namespace Tebegrammmm
 
                 mes += $"{User.IpAddress.ToString()};";
                 mes += $"{User.Port};";
+                mes += $"{message.MessageType};";
                 mes += $"{message.Time};";
                 mes += $"{message.Text};";
 
@@ -135,9 +155,9 @@ namespace Tebegrammmm
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
-        private void SendMessage(string message)
+        private void SendMessage(string message, MessageType messageType = MessageType.Text)
         {
-            Message Message = new Message(User.Name, message, DateTime.Now.ToString("hh:mm"));
+            Message Message = new Message(User.Name, message, DateTime.Now.ToString("hh:mm"),messageType);
             Contact.Messages.Add(Message);
             SendMessageToUser(Message);
             TBMessage.Text = string.Empty;
@@ -204,6 +224,56 @@ namespace Tebegrammmm
         {
             RedactcionChatsFoldersWindow RCFW = new RedactcionChatsFoldersWindow(User.ChatsFolders);
             RCFW.ShowDialog();
+        }
+        private string GetMimeType(string fileName)
+        {
+            string mimeType = "application/unknown";
+            string ext = System.IO.Path.GetExtension(fileName).ToLower();
+            Microsoft.Win32.RegistryKey regKey = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey(ext);
+            if (regKey != null && regKey.GetValue("Content Type") != null)
+                mimeType = regKey.GetValue("Content Type").ToString();
+            return mimeType;
+        }
+        private async Task SendFileToServer(string filePath)
+        {
+            string mimeType = GetMimeType(filePath);
+            if (mimeType == "application/unknown")
+            {
+                MessageBox.Show("Неизвестный тип файла");
+                return;
+            }
+
+            using var multipar = new MultipartFormDataContent();
+            var fileStream = new StreamContent(File.OpenRead(filePath));
+            fileStream.Headers.ContentType = new MediaTypeHeaderValue(mimeType);
+            multipar.Add(fileStream, name: "file", fileName: Path.GetFileName(filePath));
+
+            using var response = await httpClient.PostAsync(serverAdress, multipar);
+            var ResponseText = await response.Content.ReadAsStringAsync();
+            this.Dispatcher.Invoke(new Action(() => { SendMessage(Path.GetFileName(filePath),MessageType.File); }));
+            MessageBox.Show(ResponseText);
+        }
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.ShowDialog();
+            SendFileToServer(fileDialog.FileName);
+        }
+
+        private void LBMessages_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (LBMessages.SelectedItem == null)
+            {
+                LBMessages.SelectedIndex = -1;
+                return;
+            }
+            else if ((LBMessages.SelectedItem as Message).MessageType == MessageType.File)
+            {
+                WebClient webClient = new WebClient();
+                OpenFolderDialog openFolderDialog = new OpenFolderDialog();
+                openFolderDialog.ShowDialog();
+                webClient.DownloadFile($"{serverAdress}s/{(LBMessages.SelectedItem as Message).Text}", $"{openFolderDialog.FolderName}/{(LBMessages.SelectedItem as Message).Text}");
+            }
         }
     }
 }
