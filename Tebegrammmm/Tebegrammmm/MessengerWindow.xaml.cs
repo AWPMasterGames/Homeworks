@@ -1,7 +1,6 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Diagnostics;
-using System.Diagnostics.Contracts;
 using System.IO;
 using System.Net;
 using System.Net.Http;
@@ -11,10 +10,8 @@ using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
 using System.Net.Http.Headers;
 using Tebegrammmm.ChatsFoldersRedactsWindows;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Tebegrammmm
@@ -25,7 +22,7 @@ namespace Tebegrammmm
     public partial class MessengerWindow : Window
     {
         static HttpClient httpClient = new HttpClient();
-        string serverAdress = "https://localhost:7034/upload";
+        string serverAdress = "https://localhost:7034";
 
         User User { get; set; }
         Contact Contact { get; set; }
@@ -33,13 +30,13 @@ namespace Tebegrammmm
         TcpClient Client { get; set; }
 
         TcpListener tcpListener = null;
-        Action Action { get; set; }
         Thread Thread { get; set; }
         bool IsRunning { get; set; }
         public MessengerWindow(User user)
         {
             InitializeComponent();
             GridMessege.Visibility = Visibility.Hidden;
+            GridContactPanel.Visibility = Visibility.Hidden;
             this.User = user;
 
             LBChatsLoders.ItemsSource = User.ChatsFolders;
@@ -49,6 +46,7 @@ namespace Tebegrammmm
 
             Thread = new Thread(new ThreadStart(ReceiveMessage));
             Thread.Start();
+            
         }
 
         private void StartListner()
@@ -77,6 +75,7 @@ namespace Tebegrammmm
             GridChat.DataContext = Contact;
             LBMessages.ItemsSource = Contact.Messages;
             GridMessege.Visibility = Visibility.Visible;
+            GridContactPanel.Visibility = Visibility.Visible;
         }
 
         void ReceiveMessage()
@@ -172,7 +171,6 @@ namespace Tebegrammmm
             SendMessage(TBMessage.Text);
             TBMessage.Focus();
         }
-
         private void TBMessage_KeyDown(object sender, KeyEventArgs e)
         {
             if (LBChats.SelectedItem == null)
@@ -193,6 +191,22 @@ namespace Tebegrammmm
             if (addContact.ShowDialog() == true)
             {
                 User.ChatsFolders[0].Contacts.Add(newContact);
+            }
+        }
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            GridContactPanel.Visibility = Visibility.Hidden;
+            GridMessege.Visibility = Visibility.Hidden;
+            Contact contact = (LBChats.SelectedItem as Contact);
+            for (int i = 0; i < User.ChatsFolders.Count; i++)
+            {
+                for (int j = 0; j < User.ChatsFolders[i].Contacts.Count; j++)
+                {
+                    if(User.ChatsFolders[i].Contacts[j].Name == contact.Name)
+                    {
+                        User.ChatsFolders[i].Contacts.RemoveAt(j);
+                    }
+                }
             }
         }
 
@@ -248,7 +262,7 @@ namespace Tebegrammmm
             fileStream.Headers.ContentType = new MediaTypeHeaderValue(mimeType);
             multipar.Add(fileStream, name: "file", fileName: Path.GetFileName(filePath));
 
-            using var response = await httpClient.PostAsync(serverAdress, multipar);
+            using var response = await httpClient.PostAsync($"{serverAdress}/upload", multipar);
             var ResponseText = await response.Content.ReadAsStringAsync();
             this.Dispatcher.Invoke(new Action(() => { SendMessage(Path.GetFileName(filePath),MessageType.File); }));
             MessageBox.Show(ResponseText);
@@ -260,7 +274,7 @@ namespace Tebegrammmm
             SendFileToServer(fileDialog.FileName);
         }
 
-        private void LBMessages_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private async void LBMessages_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (LBMessages.SelectedItem == null)
             {
@@ -269,11 +283,29 @@ namespace Tebegrammmm
             }
             else if ((LBMessages.SelectedItem as Message).MessageType == MessageType.File)
             {
-                WebClient webClient = new WebClient();
                 OpenFolderDialog openFolderDialog = new OpenFolderDialog();
                 openFolderDialog.ShowDialog();
-                webClient.DownloadFile($"{serverAdress}s/{(LBMessages.SelectedItem as Message).Text}", $"{openFolderDialog.FolderName}/{(LBMessages.SelectedItem as Message).Text}");
+
+                string fileName = (LBMessages.SelectedItem as Message).Text;
+                var fileUrl = $"{serverAdress}/upload/images.png";
+                using var response = await httpClient.GetAsync(fileUrl, HttpCompletionOption.ResponseHeadersRead);
+                response.EnsureSuccessStatusCode();
+
+                var FilePath = Path.Combine(openFolderDialog.FolderName, fileName);
+
+                using var ms = await response.Content.ReadAsStreamAsync();
+                using var fs = File.Create(FilePath);
+                await ms.CopyToAsync(fs);
+                fs.Flush();
+
+                MessageBox.Show($"Файл {fileName} скачен");
             }
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            SettingsPanelWindow SPW = new SettingsPanelWindow(User);
+            SPW.ShowDialog();
         }
     }
 }

@@ -7,13 +7,12 @@
         xmlns:local1="clr-namespace:Tebegrammmm.Controls"
         mc:Ignorable="d"
         Closing="Window_Closing"
-        Title="Tebegram" Height="550" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
+        Title="Tebegram" Height="550" Width="800" MinHeight="350" MinWidth="600" WindowStartupLocation="CenterScreen">
+    <Grid Name="MainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="80"/>
             <ColumnDefinition Width="250"/>
             <ColumnDefinition/>
-            <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
         <!--Левая панель-->
         <Grid Background="#303c4c">
@@ -22,7 +21,7 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            <Button Height="50" Background="Transparent" Foreground="Gray" BorderBrush="Transparent" Content="☰" FontSize="30"/>
+            <Button Height="50" Background="Transparent" Foreground="Gray" BorderBrush="Transparent" Content="☰" FontSize="30" Click="Button_Click_6"/>
             <ListBox x:Name="LBChatsLoders" Grid.Row="1" Background="Transparent" BorderBrush="Transparent" SelectionChanged="LBChatsLoders_SelectionChanged">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -63,7 +62,6 @@
                         </Grid>
                     </Border>
                 </Button>
-                <Border BorderBrush="LightGray" BorderThickness="1" Margin="10,0,-10,0"/>
             </StackPanel>
             <ListBox x:Name="LBChats" Grid.Row="2" SelectionChanged="LBChats_SelectionChanged">
                 <ListBox.ItemTemplate>
@@ -85,65 +83,84 @@
             </ListBox>
         </Grid>
         <!--Чат-->
-        <Grid x:Name="GridChat" Grid.Column="2">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-                <RowDefinition/>
-                <RowDefinition Height="65"/>
-            </Grid.RowDefinitions>
-            <Grid Margin="10,5,0,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="auto"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <TextBlock Name="TBChat_Name" Text="{Binding Name}" FontSize="15" Margin="10,0"/>
-                <Button Grid.Column="1" Grid.RowSpan="2" Width="40" Margin="5" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2">
-                    <TextBlock Text="⋮" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                </Button>
-            </Grid>
-            <ListBox x:Name="LBMessages" Grid.Row="1" SelectionChanged="LBMessages_SelectionChanged" >
-                <ListBox.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="LightYellow" Offset="0.1"/>
-                        <GradientStop Color="LightGreen" Offset="0.5"/>
-                        <GradientStop Color="LightYellow" Offset="0.9"/>
-                    </LinearGradientBrush>
-                </ListBox.Background>
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <Border Background="White" CornerRadius="25">
-                            <Grid Width="250" Margin="10,10">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                <TextBlock Text="{Binding Sender}" Margin="5,0" Foreground="#FF4200FF"/>
-                                
-                                <TextBlock Grid.Row="1" Text="{Binding Text}" TextWrapping="Wrap" FontSize="15" Margin="5,0"/>
-                                <TextBlock Grid.Row="2" Text="{Binding Time}" Foreground="#FF7D7D7D" FontSize="10" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
+        <Border Grid.Column="2" BorderBrush="Black" BorderThickness="0.2">
 
-            </ListBox>
-            <Grid x:Name="GridMessege" Grid.Row="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="auto"/>
-                </Grid.ColumnDefinitions>
-                <Button Width="40" Content="📄" FontSize="20" Background="Transparent" Click="Button_Click_4"/>
-                <ScrollViewer Grid.Column="1" Margin="10">
-                    <TextBox x:Name="TBMessage" KeyDown="TBMessage_KeyDown" TextWrapping="Wrap" FontSize="15"/>
-                </ScrollViewer>
-                <Button Grid.Column="2" Width="40" Content="⌯⌲" Background="Transparent" Margin="10" Click="Button_Click"/>
+            <Grid x:Name="GridChat" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="65"/>
+                </Grid.RowDefinitions>
+                <Grid Name="GridContactPanel" Margin="10,5,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Name="TBChat_Name" Text="{Binding Name}" FontSize="15" Margin="10,0"/>
+                    
+                    <StackPanel Grid.Column="1" Grid.RowSpan="2" Margin="5,-2,5,0" Orientation="Horizontal">
+                        <Button Background="Transparent" BorderBrush="Transparent" Click="Button_Click_5">
+                            <Border BorderBrush="Transparent" BorderThickness="2" CornerRadius="20" Width="35" Height="35">
+                                <Grid HorizontalAlignment="Center">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="🗑" FontSize="10" Foreground="red" Margin="-5,-2,0,0"/>
+                                    <TextBlock Text="👤" FontSize="17" Margin="3,3,0,0" Foreground="RoyalBlue"/>
+
+                                </Grid>
+                            </Border>
+                        </Button>
+                        <Button  Width="40" Background="Transparent" BorderBrush="Transparent" Click="Button_Click_2">
+                            <TextBlock Text="⋮" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+                <ListBox x:Name="LBMessages" Grid.Row="1" SelectionChanged="LBMessages_SelectionChanged" >
+                    <ListBox.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="LightYellow" Offset="0.1"/>
+                            <GradientStop Color="LightGreen" Offset="0.5"/>
+                            <GradientStop Color="LightYellow" Offset="0.9"/>
+                        </LinearGradientBrush>
+                    </ListBox.Background>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="White" CornerRadius="25">
+                                <Grid Width="250" Margin="10,10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="{Binding Sender}" Margin="5,0" Foreground="#FF4200FF"/>
+
+                                    <TextBlock Grid.Row="1" Text="{Binding Text}" TextWrapping="Wrap" FontSize="15" Margin="5,0"/>
+                                    <TextBlock Grid.Row="2" Text="{Binding Time}" Foreground="#FF7D7D7D" FontSize="10" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+                <Grid x:Name="GridMessege" Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Width="40" Content="📄" FontSize="20" Background="Transparent" Click="Button_Click_4" BorderBrush="Transparent"/>
+                    <ScrollViewer Grid.Column="1" Margin="10">
+                        <TextBox x:Name="TBMessage" KeyDown="TBMessage_KeyDown" TextWrapping="Wrap" FontSize="15"/>
+                    </ScrollViewer>
+                    <Button Grid.Column="2" Width="40" Content="⌯⌲" Background="Transparent" Margin="10" Click="Button_Click"/>
+                </Grid>
             </Grid>
-        </Grid>
+        </Border>
     </Grid>
 </Window>

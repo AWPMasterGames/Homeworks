@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Tebegrammmm.ChatsFoldersRedactsWindows"
         xmlns:local1="clr-namespace:Tebegrammmm.Controls"
         mc:Ignorable="d"
-        Title="RedactFolderContatcsWindow" Height="400" Width="350" WindowStartupLocation="CenterScreen">
+        Title="Папки" Height="400" Width="350" WindowStartupLocation="CenterScreen">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http.Metadata;
+using Microsoft.Extensions.FileProviders;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
@@ -18,4 +19,23 @@ app.MapPost("/upload", async (HttpContext context) =>
 
     await context.Response.WriteAsync("файл успешно отправлен");
 });
+
+app.MapGet("/upload", async (context) =>
+{
+    var fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
+    var fieInfo = fileProvider.GetFileInfo("images.png");
+
+    context.Response.Headers.ContentDisposition = "attachment; filename=images.png";
+    await context.Response.SendFileAsync(fieInfo);
+});
+
+app.Run(async (context) =>
+{
+    var fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
+    var fieInfo = fileProvider.GetFileInfo($"{Directory.GetCurrentDirectory()}/uploads/images.png");
+
+    context.Response.Headers.ContentDisposition = "attachment; filename=images.png";
+    //await context.Response.SendFileAsync(fieInfo);
+});
+
 app.Run();
