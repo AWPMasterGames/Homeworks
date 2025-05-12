@@ -287,16 +287,11 @@ namespace Tebegrammmm
                 openFolderDialog.ShowDialog();
 
                 string fileName = (LBMessages.SelectedItem as Message).Text;
-                var fileUrl = $"{serverAdress}/upload/images.png";
-                using var response = await httpClient.GetAsync(fileUrl, HttpCompletionOption.ResponseHeadersRead);
-                response.EnsureSuccessStatusCode();
+                var fileUrl = $"{serverAdress}/upload/{fileName}";
+                using var response = await httpClient.GetStreamAsync(fileUrl);
 
-                var FilePath = Path.Combine(openFolderDialog.FolderName, fileName);
-
-                using var ms = await response.Content.ReadAsStreamAsync();
-                using var fs = File.Create(FilePath);
-                await ms.CopyToAsync(fs);
-                fs.Flush();
+                using var fs = new FileStream($"{openFolderDialog.FolderName}/{fileName}",FileMode.OpenOrCreate);
+                await response.CopyToAsync(fs);
 
                 MessageBox.Show($"Файл {fileName} скачен");
             }

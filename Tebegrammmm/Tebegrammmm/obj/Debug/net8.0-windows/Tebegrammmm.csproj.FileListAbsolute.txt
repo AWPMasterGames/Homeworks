@@ -69,3 +69,5 @@ C:\Users\student\Desktop\Tebegrammmm\Tebegrammmm\obj\Debug\net8.0-windows\Tebegr
 C:\Users\student\Desktop\Tebegrammmm\Tebegrammmm\obj\Debug\net8.0-windows\ref\Tebegrammmm.dll
 C:\Users\student\Desktop\Tebegrammmm\Tebegrammmm\obj\Debug\net8.0-windows\SettingsPanelWindow.g.cs
 C:\Users\student\Desktop\Tebegrammmm\Tebegrammmm\obj\Debug\net8.0-windows\SettingsPanelWindow.baml
+C:\Users\ПК\Documents\GitHub\Homeworks\Tebegrammmm\Tebegrammmm\obj\Debug\net8.0-windows\SettingsPanelWindow.g.cs
+C:\Users\ПК\Documents\GitHub\Homeworks\Tebegrammmm\Tebegrammmm\obj\Debug\net8.0-windows\SettingsPanelWindow.baml

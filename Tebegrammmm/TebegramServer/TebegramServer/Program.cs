@@ -20,22 +20,13 @@ app.MapPost("/upload", async (HttpContext context) =>
     await context.Response.WriteAsync("файл успешно отправлен");
 });
 
-app.MapGet("/upload", async (context) =>
+app.MapGet("/upload/{FileName}", async (HttpContext context, string FileName) =>
 {
     var fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
-    var fieInfo = fileProvider.GetFileInfo("images.png");
+    var fieInfo = fileProvider.GetFileInfo($"uploads/{FileName}");
 
-    context.Response.Headers.ContentDisposition = "attachment; filename=images.png";
+    context.Response.Headers.ContentDisposition = $"attachment; filename={FileName}";
     await context.Response.SendFileAsync(fieInfo);
-});
-
-app.Run(async (context) =>
-{
-    var fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
-    var fieInfo = fileProvider.GetFileInfo($"{Directory.GetCurrentDirectory()}/uploads/images.png");
-
-    context.Response.Headers.ContentDisposition = "attachment; filename=images.png";
-    //await context.Response.SendFileAsync(fieInfo);
 });
 
 app.Run();
